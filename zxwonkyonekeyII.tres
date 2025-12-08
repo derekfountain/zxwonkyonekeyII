@@ -1,0 +1,3872 @@
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=262 format=3]
+
+[ext_resource type="Script" path="res://brush.gd" id="1"]
+[ext_resource type="Script" path="res://object_ref.gd" id="2"]
+[ext_resource type="Script" path="res://logic_connection.gd" id="3"]
+[ext_resource type="Script" path="res://logic_frame.gd" id="4"]
+[ext_resource type="Script" path="res://logic_node.gd" id="5"]
+[ext_resource type="Script" path="res://logic_graph.gd" id="6"]
+[ext_resource type="Script" path="res://logic_variable.gd" id="7"]
+[ext_resource type="Script" path="res://object.gd" id="8"]
+[ext_resource type="Script" path="res://sprite_sheet.gd" id="9"]
+[ext_resource type="Script" path="res://room_ref.gd" id="10"]
+[ext_resource type="Script" path="res://map.gd" id="11"]
+[ext_resource type="Script" path="res://marker.gd" id="12"]
+[ext_resource type="Script" path="res://room.gd" id="13"]
+[ext_resource type="Script" path="res://game_map.gd" id="14"]
+[ext_resource type="Script" path="res://screen.gd" id="15"]
+[ext_resource type="Script" path="res://instrument.gd" id="16"]
+[ext_resource type="Script" path="res://game_data.gd" id="17"]
+[ext_resource type="Script" path="res://beep_fx_block.gd" id="18"]
+[ext_resource type="Script" path="res://beep_fx.gd" id="19"]
+[ext_resource type="Script" path="res://sub_graph.gd" id="20"]
+
+[sub_resource type="Resource" id="Resource_1j3u7"]
+script = ExtResource("1")
+contents = [[{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 7
+}, {
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 6
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 14
+}, {
+"attr": null,
+"tile": null
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 5
+}, {
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 4
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 10
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 13
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 3
+}, {
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 2
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 9
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 11
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 1
+}, {
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 0
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 8
+}, {
+"attr": {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+"tile": 12
+}]]
+
+[sub_resource type="Resource" id="Resource_25kdh"]
+script = ExtResource("1")
+contents = [[{
+"attr": {
+"bright": true,
+"collision": 1,
+"ink": 5,
+"paper": 0
+},
+"tile": 26
+}, {
+"attr": {
+"bright": false,
+"collision": 9,
+"ink": 7,
+"paper": 0
+},
+"tile": 27
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 21
+}, {
+"attr": {
+"bright": false,
+"collision": 8,
+"ink": 5,
+"paper": 0
+},
+"tile": 25
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 20
+}, {
+"attr": {
+"bright": false,
+"collision": 8,
+"ink": 4,
+"paper": 0
+},
+"tile": 24
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 19
+}, {
+"attr": {
+"bright": false,
+"collision": 8,
+"ink": 4,
+"paper": 0
+},
+"tile": 23
+}], [{
+"attr": {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+"tile": 18
+}, {
+"attr": {
+"bright": false,
+"collision": 8,
+"ink": 4,
+"paper": 0
+},
+"tile": 22
+}]]
+
+[sub_resource type="Resource" id="Resource_6gp38"]
+script = ExtResource("1")
+contents = [[{
+"attr": {
+"bright": false,
+"collision": 5,
+"ink": 4,
+"paper": 0
+},
+"tile": 15
+}, {
+"attr": {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+"tile": 16
+}, {
+"attr": {
+"bright": false,
+"collision": 9,
+"ink": 4,
+"paper": 0
+},
+"tile": 17
+}]]
+
+[sub_resource type="Resource" id="Resource_oj1g8"]
+script = ExtResource("3")
+from_node = "26688975-6aca-457e-b40e-625bdb1accf9"
+to_node = "7ba07652-d3c1-4f6d-b365-3141ad8ca8e5"
+from_port = 2
+from_port_name = "x"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_gu8td"]
+script = ExtResource("3")
+from_node = "7ba07652-d3c1-4f6d-b365-3141ad8ca8e5"
+to_node = "dc3f441a-6357-4382-b577-a5adf29a15ca"
+from_port = 0
+from_port_name = "result"
+to_port = 2
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_wfk2p"]
+script = ExtResource("3")
+from_node = "51ea716f-aea7-4150-b65b-22703fb3bc03"
+to_node = "b688c4bf-829d-41c3-b4b1-e2bb39d6ba81"
+from_port = 0
+from_port_name = "val"
+to_port = 2
+to_port_name = "animation"
+type = 1
+
+[sub_resource type="Resource" id="Resource_7vo5e"]
+script = ExtResource("3")
+from_node = "9b21c6f4-05e9-4d00-8458-bafb58044c31"
+to_node = "b660207d-e63f-40bb-aa2b-c33d3d08c9c0"
+from_port = 4
+from_port_name = "fire"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_7h2ok"]
+script = ExtResource("3")
+from_node = "480a002f-a307-4f4e-ac71-b85a192ae550"
+to_node = "99e6204b-141b-4722-89b9-52895de92975"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_aa57j"]
+script = ExtResource("3")
+from_node = "e35a4955-e25b-4a6a-850e-e1043a7a2fe7"
+to_node = "8032230a-98de-43d0-ad71-0f83cc1ac42a"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_rmgap"]
+script = ExtResource("3")
+from_node = "8032230a-98de-43d0-ad71-0f83cc1ac42a"
+to_node = "eb142375-4a49-4539-9c94-4e5a59a96beb"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_yu3st"]
+script = ExtResource("3")
+from_node = "d8eeb8c7-f373-422c-8832-d7a81ca261d3"
+to_node = "3c1d17cc-f6c3-4dd4-901a-b7ff311a09fa"
+from_port = 0
+from_port_name = "val"
+to_port = 0
+to_port_name = "index"
+type = 1
+
+[sub_resource type="Resource" id="Resource_dti3s"]
+script = ExtResource("3")
+from_node = "4640bf4e-8625-43d9-811c-a3351caa5527"
+to_node = "f1c0383a-a599-497a-abc2-57feeee87c77"
+from_port = 2
+from_port_name = "x"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_4tltq"]
+script = ExtResource("3")
+from_node = "f1c0383a-a599-497a-abc2-57feeee87c77"
+to_node = "eb142375-4a49-4539-9c94-4e5a59a96beb"
+from_port = 0
+from_port_name = "result"
+to_port = 2
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_4m7un"]
+script = ExtResource("3")
+from_node = "feb959af-891e-4f5d-a475-e8801999dbf7"
+to_node = "e7581e08-917c-4dcd-af23-9a561369f0d8"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_2bgpo"]
+script = ExtResource("3")
+from_node = "e7581e08-917c-4dcd-af23-9a561369f0d8"
+to_node = "0bd69874-b27f-40d3-b4d6-a74ecf5e3423"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_cp53q"]
+script = ExtResource("3")
+from_node = "bd9b4c18-4f06-4d8e-80c4-5245eace1695"
+to_node = "feb959af-891e-4f5d-a475-e8801999dbf7"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_jtdlc"]
+script = ExtResource("3")
+from_node = "4203c6f1-0f94-4388-98eb-22ebd25d894c"
+to_node = "eb142375-4a49-4539-9c94-4e5a59a96beb"
+from_port = 0
+from_port_name = "result"
+to_port = 3
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vodo6"]
+script = ExtResource("3")
+from_node = "3c1d17cc-f6c3-4dd4-901a-b7ff311a09fa"
+to_node = "4203c6f1-0f94-4388-98eb-22ebd25d894c"
+from_port = 0
+from_port_name = "output"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_euhdf"]
+script = ExtResource("3")
+from_node = "4640bf4e-8625-43d9-811c-a3351caa5527"
+to_node = "4203c6f1-0f94-4388-98eb-22ebd25d894c"
+from_port = 3
+from_port_name = "y"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_gtpom"]
+script = ExtResource("3")
+from_node = "eb142375-4a49-4539-9c94-4e5a59a96beb"
+to_node = "a002389e-2e1d-4b39-a4d5-249a6d0faa7a"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_8mv07"]
+script = ExtResource("3")
+from_node = "a002389e-2e1d-4b39-a4d5-249a6d0faa7a"
+to_node = "feb959af-891e-4f5d-a475-e8801999dbf7"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_04flc"]
+script = ExtResource("3")
+from_node = "d30b8182-e7f8-4662-b618-735d9cbe071b"
+to_node = "d0edb6ad-3bea-4c24-b544-03067926783f"
+from_port = 0
+from_port_name = "val"
+to_port = 0
+to_port_name = "index"
+type = 1
+
+[sub_resource type="Resource" id="Resource_djcpx"]
+script = ExtResource("3")
+from_node = "d0edb6ad-3bea-4c24-b544-03067926783f"
+to_node = "f1c0383a-a599-497a-abc2-57feeee87c77"
+from_port = 0
+from_port_name = "output"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_qrd64"]
+script = ExtResource("3")
+from_node = "5a48b851-0dca-47f6-9575-864ef1b62dfb"
+to_node = "5d592717-7959-4c5a-91f5-a29f6475a27b"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_bbc4r"]
+script = ExtResource("3")
+from_node = "26688975-6aca-457e-b40e-625bdb1accf9"
+to_node = "6127fa8f-3508-48f9-bb7a-31220ae7a7ae"
+from_port = 3
+from_port_name = "y"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_chqt1"]
+script = ExtResource("3")
+from_node = "6127fa8f-3508-48f9-bb7a-31220ae7a7ae"
+to_node = "dc3f441a-6357-4382-b577-a5adf29a15ca"
+from_port = 0
+from_port_name = "result"
+to_port = 3
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_ja5iv"]
+script = ExtResource("3")
+from_node = "5a48b851-0dca-47f6-9575-864ef1b62dfb"
+to_node = "072800ae-2d4c-4a25-9c6d-7bc27eb626a7"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_ycs6y"]
+script = ExtResource("3")
+from_node = "8032230a-98de-43d0-ad71-0f83cc1ac42a"
+to_node = "cda1d1d6-aa92-4ef5-b91e-402bd05ce2bf"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_pn02n"]
+script = ExtResource("3")
+from_node = "cda1d1d6-aa92-4ef5-b91e-402bd05ce2bf"
+to_node = "dc3f441a-6357-4382-b577-a5adf29a15ca"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_ve8ll"]
+script = ExtResource("3")
+from_node = "986e3b03-815a-4718-aed5-476b44fc6717"
+to_node = "c2b9c92d-e9ad-44d2-be59-f9f4310b2c23"
+from_port = 3
+from_port_name = "y"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_t5nvc"]
+script = ExtResource("3")
+from_node = "c2b9c92d-e9ad-44d2-be59-f9f4310b2c23"
+to_node = "90b6a9da-557c-4047-b421-dc7d23b6304e"
+from_port = 0
+from_port_name = "result"
+to_port = 3
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_0xcga"]
+script = ExtResource("3")
+from_node = "986e3b03-815a-4718-aed5-476b44fc6717"
+to_node = "90b6a9da-557c-4047-b421-dc7d23b6304e"
+from_port = 2
+from_port_name = "x"
+to_port = 2
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_h4d53"]
+script = ExtResource("3")
+from_node = "63005632-e8f5-41e6-969f-6ead9d3e0627"
+to_node = "787cb623-d896-461f-a16c-4a039724210e"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_5e5ee"]
+script = ExtResource("3")
+from_node = "5bb278fb-999a-47cb-9f32-a8750ebd495d"
+to_node = "787cb623-d896-461f-a16c-4a039724210e"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_v1ysk"]
+script = ExtResource("3")
+from_node = "b8dfd823-69d6-4c8a-8e0d-730623f474c2"
+to_node = "bffdcb35-81af-4e50-91ec-0c036882f261"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_gwaq5"]
+script = ExtResource("3")
+from_node = "8f5e9e3d-63e3-4c39-a54d-d9c8c95cdf60"
+to_node = "bffdcb35-81af-4e50-91ec-0c036882f261"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_43qoe"]
+script = ExtResource("3")
+from_node = "bffdcb35-81af-4e50-91ec-0c036882f261"
+to_node = "15c40131-e6dc-4ed5-b9a0-ecfcdbe5440d"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_b1a3w"]
+script = ExtResource("3")
+from_node = "bffdcb35-81af-4e50-91ec-0c036882f261"
+to_node = "b688c4bf-829d-41c3-b4b1-e2bb39d6ba81"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_l0jos"]
+script = ExtResource("3")
+from_node = "787cb623-d896-461f-a16c-4a039724210e"
+to_node = "90b6a9da-557c-4047-b421-dc7d23b6304e"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_h4lqk"]
+script = ExtResource("3")
+from_node = "787cb623-d896-461f-a16c-4a039724210e"
+to_node = "8032230a-98de-43d0-ad71-0f83cc1ac42a"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_ytl6w"]
+script = ExtResource("3")
+from_node = "9cf806b9-174b-44d2-aee3-b45eba7454ae"
+to_node = "5a48b851-0dca-47f6-9575-864ef1b62dfb"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_lhpau"]
+script = ExtResource("3")
+from_node = "9cf806b9-174b-44d2-aee3-b45eba7454ae"
+to_node = "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7"
+from_port = 1
+from_port_name = "sides"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_3bkvm"]
+script = ExtResource("3")
+from_node = "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7"
+to_node = "5a48b851-0dca-47f6-9575-864ef1b62dfb"
+from_port = 0
+from_port_name = "out"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vriha"]
+script = ExtResource("3")
+from_node = "cf186c18-8deb-4663-9cb7-2880e9d9386f"
+to_node = "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_okal7"]
+script = ExtResource("3")
+from_node = "3d751477-676f-4c76-90bc-ac63dc512d56"
+to_node = "8c961218-0943-4cb8-a716-d32483a4469b"
+from_port = 1
+from_port_name = "sides"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_4em4m"]
+script = ExtResource("3")
+from_node = "be362e89-be99-47ed-9088-bac8359e5905"
+to_node = "8c961218-0943-4cb8-a716-d32483a4469b"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_7hddo"]
+script = ExtResource("3")
+from_node = "8c961218-0943-4cb8-a716-d32483a4469b"
+to_node = "8ec788c6-877c-4d04-a4f8-6fdc02d7cdf6"
+from_port = 0
+from_port_name = "out"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vkfg3"]
+script = ExtResource("3")
+from_node = "3d751477-676f-4c76-90bc-ac63dc512d56"
+to_node = "8ec788c6-877c-4d04-a4f8-6fdc02d7cdf6"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_kxf6u"]
+script = ExtResource("3")
+from_node = "8ec788c6-877c-4d04-a4f8-6fdc02d7cdf6"
+to_node = "52bd13e4-7f60-42c9-8081-3bc740c04d76"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_r8bd6"]
+script = ExtResource("3")
+from_node = "124de37d-5caa-4233-a2a5-d448d2a515cf"
+to_node = "52bd13e4-7f60-42c9-8081-3bc740c04d76"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vxuws"]
+script = ExtResource("3")
+from_node = "52bd13e4-7f60-42c9-8081-3bc740c04d76"
+to_node = "2de0ac78-2ae7-43d5-9eb6-ccef1b13c640"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_whm8m"]
+script = ExtResource("3")
+from_node = "2de0ac78-2ae7-43d5-9eb6-ccef1b13c640"
+to_node = "3100fd35-de3f-4371-b07f-d5a6b8dfb5a2"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_b6fwr"]
+script = ExtResource("3")
+from_node = "939e7dcc-4e3c-4b95-978b-cfaafdb2cd01"
+to_node = "c5f3f14a-deb8-43b8-b72b-68f04762d276"
+from_port = 0
+from_port_name = "val"
+to_port = 0
+to_port_name = "index"
+type = 1
+
+[sub_resource type="Resource" id="Resource_ndjd8"]
+script = ExtResource("3")
+from_node = "c5f3f14a-deb8-43b8-b72b-68f04762d276"
+to_node = "7ba07652-d3c1-4f6d-b365-3141ad8ca8e5"
+from_port = 0
+from_port_name = "output"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_4tcdr"]
+script = ExtResource("3")
+from_node = "0dc9653d-1f0b-4416-8e2f-ae89ad56e23c"
+to_node = "8fc1859d-0122-44b0-ae22-e8373bb23246"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_hxwnh"]
+script = ExtResource("3")
+from_node = "0dc9653d-1f0b-4416-8e2f-ae89ad56e23c"
+to_node = "8fc1859d-0122-44b0-ae22-e8373bb23246"
+from_port = 1
+from_port_name = "p1"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_b7xc5"]
+script = ExtResource("3")
+from_node = "8fc1859d-0122-44b0-ae22-e8373bb23246"
+to_node = "76b3a92b-0030-4f07-9a0d-5254cdc46b72"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_cy1j8"]
+script = ExtResource("3")
+from_node = "aa5b4f23-b707-44e1-afff-01ea992a17aa"
+to_node = "fb32fd89-8a55-44a7-9abf-f402994eff89"
+from_port = 0
+from_port_name = "x_out"
+to_port = 0
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_o45d3"]
+script = ExtResource("3")
+from_node = "58f134ec-6302-4a23-b170-461d8bf5313c"
+to_node = "aa5b4f23-b707-44e1-afff-01ea992a17aa"
+from_port = 0
+from_port_name = "result"
+to_port = 1
+to_port_name = "y_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_csl1b"]
+script = ExtResource("3")
+from_node = "aa5b4f23-b707-44e1-afff-01ea992a17aa"
+to_node = "fb32fd89-8a55-44a7-9abf-f402994eff89"
+from_port = 1
+from_port_name = "y_out"
+to_port = 1
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_au77y"]
+script = ExtResource("3")
+from_node = "6247e73f-a854-4e0b-8ad0-9bff68a25233"
+to_node = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+from_port = 2
+from_port_name = "x"
+to_port = 1
+to_port_name = "x_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_76xr6"]
+script = ExtResource("3")
+from_node = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+to_node = "aa5b4f23-b707-44e1-afff-01ea992a17aa"
+from_port = 0
+from_port_name = "x_out"
+to_port = 0
+to_port_name = "x_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_u3t8s"]
+script = ExtResource("3")
+from_node = "6247e73f-a854-4e0b-8ad0-9bff68a25233"
+to_node = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+from_port = 3
+from_port_name = "y"
+to_port = 2
+to_port_name = "y_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_64fum"]
+script = ExtResource("3")
+from_node = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+to_node = "58f134ec-6302-4a23-b170-461d8bf5313c"
+from_port = 1
+from_port_name = "y_out"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_cplxa"]
+script = ExtResource("3")
+from_node = "fb32fd89-8a55-44a7-9abf-f402994eff89"
+to_node = "0da55310-3b13-465b-9405-28a02e324dff"
+from_port = 3
+from_port_name = "type"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_8v7sj"]
+script = ExtResource("3")
+from_node = "9764bb82-d3a1-49bb-8c17-be9a8c9dc1c2"
+to_node = "0da55310-3b13-465b-9405-28a02e324dff"
+from_port = 3
+from_port_name = "type"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_7rrkj"]
+script = ExtResource("3")
+from_node = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+to_node = "bffe214b-e242-45e5-a83b-3edf28915de2"
+from_port = 0
+from_port_name = "x_out"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_dq0fa"]
+script = ExtResource("3")
+from_node = "bffe214b-e242-45e5-a83b-3edf28915de2"
+to_node = "24207445-4ee5-41eb-94df-68b8e4d4b9e3"
+from_port = 0
+from_port_name = "result"
+to_port = 0
+to_port_name = "x_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_01uu3"]
+script = ExtResource("3")
+from_node = "24207445-4ee5-41eb-94df-68b8e4d4b9e3"
+to_node = "9764bb82-d3a1-49bb-8c17-be9a8c9dc1c2"
+from_port = 0
+from_port_name = "x_out"
+to_port = 0
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_g4qbn"]
+script = ExtResource("3")
+from_node = "58f134ec-6302-4a23-b170-461d8bf5313c"
+to_node = "24207445-4ee5-41eb-94df-68b8e4d4b9e3"
+from_port = 0
+from_port_name = "result"
+to_port = 1
+to_port_name = "y_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_324qc"]
+script = ExtResource("3")
+from_node = "24207445-4ee5-41eb-94df-68b8e4d4b9e3"
+to_node = "9764bb82-d3a1-49bb-8c17-be9a8c9dc1c2"
+from_port = 1
+from_port_name = "y_out"
+to_port = 1
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_1nh8x"]
+script = ExtResource("3")
+from_node = "2e468139-72bb-4e83-8c47-e38ca70a051b"
+to_node = "b660207d-e63f-40bb-aa2b-c33d3d08c9c0"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_cavhl"]
+script = ExtResource("3")
+from_node = "b660207d-e63f-40bb-aa2b-c33d3d08c9c0"
+to_node = "69874f37-bb01-42c2-9b20-faed5b4ca80c"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_3yrul"]
+script = ExtResource("3")
+from_node = "69874f37-bb01-42c2-9b20-faed5b4ca80c"
+to_node = "fea73d2a-adb1-47a6-bdc4-5b0a0a986503"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_wdhgy"]
+script = ExtResource("3")
+from_node = "5cf0e87b-d2f2-4f74-a68c-d1420c0eb736"
+to_node = "89325317-b560-4ea5-9c9c-9d801dd4ceed"
+from_port = 0
+from_port_name = "val"
+to_port = 0
+to_port_name = "index"
+type = 1
+
+[sub_resource type="Resource" id="Resource_ittc8"]
+script = ExtResource("3")
+from_node = "89325317-b560-4ea5-9c9c-9d801dd4ceed"
+to_node = "fea73d2a-adb1-47a6-bdc4-5b0a0a986503"
+from_port = 0
+from_port_name = "output"
+to_port = 1
+to_port_name = "val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_jcwr5"]
+script = ExtResource("3")
+from_node = "69874f37-bb01-42c2-9b20-faed5b4ca80c"
+to_node = "480a002f-a307-4f4e-ac71-b85a192ae550"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_viop7"]
+script = ExtResource("3")
+from_node = "0da55310-3b13-465b-9405-28a02e324dff"
+to_node = "69874f37-bb01-42c2-9b20-faed5b4ca80c"
+from_port = 0
+from_port_name = "out"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_lrodh"]
+script = ExtResource("3")
+from_node = "6e24a3d7-a2bb-47e2-98bb-1f22797ab085"
+to_node = "312087c1-5a48-46f3-bf99-072dc320677f"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_gnn2l"]
+script = ExtResource("3")
+from_node = "312087c1-5a48-46f3-bf99-072dc320677f"
+to_node = "2e7fca22-58b5-4735-bcde-06fb5a0bd12a"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_b0rrt"]
+script = ExtResource("3")
+from_node = "2e7fca22-58b5-4735-bcde-06fb5a0bd12a"
+to_node = "cebf4167-1759-48c1-b93c-5631efb2cf8b"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_t32rt"]
+script = ExtResource("5")
+id = "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7"
+type = "7b7dac05-cfcd-4b36-94de-7461bbda7e24"
+properties = {}
+position = Vector2(660, 4780)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_wkce1"]
+script = ExtResource("5")
+id = "072800ae-2d4c-4a25-9c6d-7bc27eb626a7"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 3
+}
+position = Vector2(1580, 4580)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_r6iqd"]
+script = ExtResource("5")
+id = "09048e20-e08d-4b52-84b8-e6e8894a7c30"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "He's not jumping..."
+}
+position = Vector2(1820, 3200)
+node_size = Vector2(325.925, 131.034)
+
+[sub_resource type="Resource" id="Resource_xgg0r"]
+script = ExtResource("5")
+id = "0bd69874-b27f-40d3-b4d6-a74ecf5e3423"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 1
+}
+position = Vector2(7320, 1940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_vrltt"]
+script = ExtResource("5")
+id = "0dc9653d-1f0b-4416-8e2f-ae89ad56e23c"
+type = "5ee2dc1f-6457-458a-bdcf-a510d535573c"
+properties = {
+"id": 0,
+"name": ""
+}
+position = Vector2(180, 6220)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_o6c4i"]
+script = ExtResource("5")
+id = "124de37d-5caa-4233-a2a5-d448d2a515cf"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 1
+}
+position = Vector2(820, 5720)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_7uv8h"]
+script = ExtResource("5")
+id = "15c40131-e6dc-4ed5-b9a0-ecfcdbe5440d"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": -1,
+"frame": -1,
+"rate": 0
+}
+position = Vector2(2120, 940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_4kaaw"]
+script = ExtResource("5")
+id = "24ab56aa-cbdc-4e7d-b490-a59b625b75d4"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "This moves Wonky based on the direction he's facing. Add 1 (rightwards) or -1 (leftwards) to his X location. His Y location is increased each time, whch attempts to move him into the ground he's standing on. The surfaces have their top collision side switched on, so this doesn't work (unless he's standing on a gap) and  instead the collision node is activated. See below."
+}
+position = Vector2(2280, 3980)
+node_size = Vector2(760, 405.72)
+
+[sub_resource type="Resource" id="Resource_gxt5o"]
+script = ExtResource("5")
+id = "26688975-6aca-457e-b40e-625bdb1accf9"
+type = "dbdcce8d-d479-45dd-93d0-fcb65460bfa7"
+properties = {}
+position = Vector2(1040, 3820)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_mrvc6"]
+script = ExtResource("5")
+id = "2de0ac78-2ae7-43d5-9eb6-ccef1b13c640"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 3
+}
+position = Vector2(1740, 5360)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_pnj36"]
+script = ExtResource("5")
+id = "2e468139-72bb-4e83-8c47-e38ca70a051b"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 1
+}
+position = Vector2(200, -680)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_bj3qw"]
+script = ExtResource("5")
+id = "3100fd35-de3f-4371-b07f-d5a6b8dfb5a2"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 1
+}
+position = Vector2(2240, 5360)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ivemc"]
+script = ExtResource("5")
+id = "3448b8fd-84d0-406e-b42d-447101015e25"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "This is the jump animation table. The Y position is adjusted by this sequence of 40 values as Wonky goes up, along, then down"
+}
+position = Vector2(4100, 3620)
+node_size = Vector2(569.09, 267.644)
+
+[sub_resource type="Resource" id="Resource_onxhn"]
+script = ExtResource("5")
+id = "39b25552-ef6f-4247-8cb8-d501e5bbd2a9"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "If he's falling, stop the animation. This stops his legs kicking as he falls."
+}
+position = Vector2(2460, 1140)
+node_size = Vector2(493.021, 250.717)
+
+[sub_resource type="Resource" id="Resource_ftoss"]
+script = ExtResource("5")
+id = "3c0637e8-a90e-48fb-9b9a-216dde81b23c"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Movement, left, right, up if he's jumping, down if he's falling"
+}
+position = Vector2(-360, 2120)
+node_size = Vector2(516.867, 180.481)
+
+[sub_resource type="Resource" id="Resource_eqn41"]
+script = ExtResource("5")
+id = "3c1d17cc-f6c3-4dd4-901a-b7ff311a09fa"
+type = "5edff22e-62eb-407f-912b-880916a887fc"
+properties = {
+"index": 0,
+"mode": 0,
+"values": Array[int]([2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -2, -2, -2, -2, -2])
+}
+position = Vector2(4100, 3060)
+node_size = Vector2(506.529, 494.492)
+
+[sub_resource type="Resource" id="Resource_pbygc"]
+script = ExtResource("5")
+id = "3d751477-676f-4c76-90bc-ac63dc512d56"
+type = "8d886b8c-cfba-40e8-bc9f-da10cfd08542"
+properties = {}
+position = Vector2(240, 5340)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_d04xx"]
+script = ExtResource("5")
+id = "4203c6f1-0f94-4388-98eb-22ebd25d894c"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 1
+}
+position = Vector2(5060, 2780)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_5ebn1"]
+script = ExtResource("5")
+id = "4640bf4e-8625-43d9-811c-a3351caa5527"
+type = "dbdcce8d-d479-45dd-93d0-fcb65460bfa7"
+properties = {}
+position = Vector2(4600, 2180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ranmj"]
+script = ExtResource("5")
+id = "46f5c00f-75d5-43da-b1a5-04d4fa3da0a4"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "If Wonky is jumping, he moves forward (whichever direction he's facing). If he's not jumping, then he moves forward anyway. I can optimise this."
+}
+position = Vector2(220, 3060)
+node_size = Vector2(909.366, 191.928)
+
+[sub_resource type="Resource" id="Resource_2qfw4"]
+script = ExtResource("5")
+id = "480a002f-a307-4f4e-ac71-b85a192ae550"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 1
+}
+position = Vector2(4480, -460)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_q4nml"]
+script = ExtResource("5")
+id = "51ea716f-aea7-4150-b65b-22703fb3bc03"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(980, 1380)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_84apf"]
+script = ExtResource("5")
+id = "52bd13e4-7f60-42c9-8081-3bc740c04d76"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(1280, 5360)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xt3yj"]
+script = ExtResource("5")
+id = "5536eb89-b14a-4b7c-9d76-70aa039343cf"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Check for magic key pressed. If he's on a trampoline, jump. If he's not, reverse direciton."
+}
+position = Vector2(-380, -680)
+node_size = Vector2(533.7329, 199.79993)
+
+[sub_resource type="Resource" id="Resource_7jn3s"]
+script = ExtResource("5")
+id = "5727a31f-b90a-4376-82b2-b365f3890f60"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "If Wonky is falling it's simple, just increase his y-pos on screen"
+}
+position = Vector2(740, 1940)
+node_size = Vector2(541.238, 210.481)
+
+[sub_resource type="Resource" id="Resource_xwnvc"]
+script = ExtResource("5")
+id = "5a48b851-0dca-47f6-9575-864ef1b62dfb"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 2
+}
+position = Vector2(1060, 4600)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_yejsd"]
+script = ExtResource("5")
+id = "5bb278fb-999a-47cb-9f32-a8750ebd495d"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 3
+}
+position = Vector2(240, 2440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_uaipv"]
+script = ExtResource("5")
+id = "5d592717-7959-4c5a-91f5-a29f6475a27b"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 3
+}
+position = Vector2(1580, 4880)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_vwlk3"]
+script = ExtResource("5")
+id = "60e42b29-3a7a-4664-9a95-858aa74be060"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "If this goes off the bottom of the 40-entry table then he's landed and the jump is complete"
+}
+position = Vector2(6500, 1680)
+node_size = Vector2(570.928, 202.872)
+
+[sub_resource type="Resource" id="Resource_40ovs"]
+script = ExtResource("5")
+id = "6127fa8f-3508-48f9-bb7a-31220ae7a7ae"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 1,
+"operator": 0
+}
+position = Vector2(1720, 4100)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_umcl7"]
+script = ExtResource("5")
+id = "63005632-e8f5-41e6-969f-6ead9d3e0627"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 3
+}
+position = Vector2(240, 2120)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fq2ia"]
+script = ExtResource("5")
+id = "72429823-0e50-442c-b6ff-66a6c8838c72"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Trampoline, so a jump.  Exits with is_jumping 1 and the jump frame set to 0 if jump has been pressed."
+}
+position = Vector2(4480, -120)
+node_size = Vector2(769.03406, 189.23563)
+
+[sub_resource type="Resource" id="Resource_iyf5y"]
+script = ExtResource("5")
+id = "76b3a92b-0030-4f07-9a0d-5254cdc46b72"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"index": 0,
+"variable": 1
+}
+position = Vector2(1220, 6240)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_i4l46"]
+script = ExtResource("5")
+id = "787cb623-d896-461f-a16c-4a039724210e"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(740, 2200)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_3mgxe"]
+script = ExtResource("5")
+id = "7a65cf5a-165c-4cf3-aafa-5ff25ce9f197"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Update the animation frame. If is walking or has been set into a jump,  the frame rate will be 2. Otherwise the frame rate will be 0 (no animation)"
+}
+position = Vector2(1560, 1540)
+node_size = Vector2(635.635, 269.138)
+
+[sub_resource type="Resource" id="Resource_44lt4"]
+script = ExtResource("5")
+id = "7ba07652-d3c1-4f6d-b365-3141ad8ca8e5"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 0
+}
+position = Vector2(1500, 3740)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_h8a02"]
+script = ExtResource("5")
+id = "7bf2241b-60be-4237-aafa-286f7b222336"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Updatte animation frame, unless he's falling"
+}
+position = Vector2(-500, 920)
+node_size = Vector2(539.68, 203.403)
+
+[sub_resource type="Resource" id="Resource_shrvr"]
+script = ExtResource("5")
+id = "8032230a-98de-43d0-ad71-0f83cc1ac42a"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(1380, 3000)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_nk6jy"]
+script = ExtResource("5")
+id = "8912c96a-d3c4-4b18-a312-daecab17848b"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Collision detection looking to see if he hit something to his side, and was jumping. i.e. he's jumped into something. If so, stop the jump and turn it into a fall."
+}
+position = Vector2(-440, 5340)
+node_size = Vector2(644.196, 295.332)
+
+[sub_resource type="Resource" id="Resource_cpi63"]
+script = ExtResource("5")
+id = "8c961218-0943-4cb8-a716-d32483a4469b"
+type = "5900d014-78f0-4202-a95c-2e31a9816740"
+properties = {}
+position = Vector2(560, 5540)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_3gooi"]
+script = ExtResource("5")
+id = "8ec788c6-877c-4d04-a4f8-6fdc02d7cdf6"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 5,
+"const_opb": 0
+}
+position = Vector2(800, 5340)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_eki74"]
+script = ExtResource("5")
+id = "8f5e9e3d-63e3-4c39-a54d-d9c8c95cdf60"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 2
+}
+position = Vector2(100, 920)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fnjs0"]
+script = ExtResource("5")
+id = "8fc1859d-0122-44b0-ae22-e8373bb23246"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(660, 6240)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_5npwn"]
+script = ExtResource("5")
+id = "90b6a9da-557c-4047-b421-dc7d23b6304e"
+type = "53f3a6c9-2666-4c7f-8094-327c49e6771f"
+properties = {
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(2060, 2060)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_rnyql"]
+script = ExtResource("5")
+id = "939e7dcc-4e3c-4b95-978b-cfaafdb2cd01"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(120, 3560)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_pqasr"]
+script = ExtResource("5")
+id = "986e3b03-815a-4718-aed5-476b44fc6717"
+type = "dbdcce8d-d479-45dd-93d0-fcb65460bfa7"
+properties = {}
+position = Vector2(1420, 2260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_aox6h"]
+script = ExtResource("5")
+id = "99e6204b-141b-4722-89b9-52895de92975"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 2
+}
+position = Vector2(5000, -460)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_w4h2g"]
+script = ExtResource("5")
+id = "9b21c6f4-05e9-4d00-8458-bafb58044c31"
+type = "ca52338c-d006-4083-9ed0-794f54f2c3ec"
+properties = {
+"down": 1,
+"fire": 1,
+"left": -1,
+"mode": 2,
+"right": 1,
+"up": 1
+}
+position = Vector2(2060, -400)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_dh8sa"]
+script = ExtResource("5")
+id = "9cf806b9-174b-44d2-aee3-b45eba7454ae"
+type = "8d886b8c-cfba-40e8-bc9f-da10cfd08542"
+properties = {}
+position = Vector2(240, 4640)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xrncm"]
+script = ExtResource("5")
+id = "a002389e-2e1d-4b39-a4d5-249a6d0faa7a"
+type = "de542fd9-0aa0-4c8e-ac6e-79d6c7e2433b"
+properties = {
+"const": 1,
+"variable": 2
+}
+position = Vector2(5820, 1940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_dth4g"]
+script = ExtResource("5")
+id = "a4a59057-903a-4826-aa2b-c177fbf2b032"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Collision detection for falling, runs when the above code moves Wonky. I'm only interested in whether he's standing on something firm (i.e. on a surface) or not (i.e. over a gap)"
+}
+position = Vector2(-460, 4640)
+node_size = Vector2(657.607, 266.919)
+
+[sub_resource type="Resource" id="Resource_hkl0y"]
+script = ExtResource("5")
+id = "ad3b176c-fabf-45e1-81b0-1ed6488a0de3"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "He's jumping. A jump will complete once started, that's the design. Cycle through the Y offset table to animate his location up then down, moving left or right all the time."
+}
+position = Vector2(5200, 1480)
+node_size = Vector2(736.602, 302.514)
+
+[sub_resource type="Resource" id="Resource_6m82r"]
+script = ExtResource("5")
+id = "b660207d-e63f-40bb-aa2b-c33d3d08c9c0"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(3080, -480)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_mve8t"]
+script = ExtResource("5")
+id = "b688c4bf-829d-41c3-b4b1-e2bb39d6ba81"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": -1,
+"frame": -1,
+"rate": 2
+}
+position = Vector2(1560, 1200)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xeme8"]
+script = ExtResource("5")
+id = "b8dfd823-69d6-4c8a-8e0d-730623f474c2"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 3
+}
+position = Vector2(380, 1260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_n6f7n"]
+script = ExtResource("5")
+id = "bd9b4c18-4f06-4d8e-80c4-5245eace1695"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 2
+}
+position = Vector2(5820, 2260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_qi42o"]
+script = ExtResource("5")
+id = "be362e89-be99-47ed-9088-bac8359e5905"
+type = "3fcab087-5e70-4d3f-8505-93631e535d51"
+properties = {
+"value": 12
+}
+position = Vector2(240, 5720)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_4n7ek"]
+script = ExtResource("5")
+id = "bffdcb35-81af-4e50-91ec-0c036882f261"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 1
+}
+position = Vector2(1080, 940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fqi31"]
+script = ExtResource("5")
+id = "c2b9c92d-e9ad-44d2-be59-f9f4310b2c23"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 1,
+"operator": 0
+}
+position = Vector2(1760, 2460)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ygrhs"]
+script = ExtResource("5")
+id = "c5f3f14a-deb8-43b8-b72b-68f04762d276"
+type = "5edff22e-62eb-407f-912b-880916a887fc"
+properties = {
+"index": 0,
+"mode": 0,
+"values": Array[int]([1, -1])
+}
+position = Vector2(560, 3560)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_rjomb"]
+script = ExtResource("5")
+id = "cc2e841c-b662-4606-a46e-908fe06c7fd1"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "facing_animation is 0 if Wonky is facing right, or 1 if he's facing left.
+If he's facing right I want to increase his X by 1. If he's facing left I want to decrease his X by 1."
+}
+position = Vector2(3840, 2180)
+node_size = Vector2(695.212, 265.636)
+
+[sub_resource type="Resource" id="Resource_32yk4"]
+script = ExtResource("5")
+id = "cda1d1d6-aa92-4ef5-b91e-402bd05ce2bf"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 3
+}
+position = Vector2(1900, 3440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_vhs1p"]
+script = ExtResource("5")
+id = "cf186c18-8deb-4663-9cb7-2880e9d9386f"
+type = "3fcab087-5e70-4d3f-8505-93631e535d51"
+properties = {
+"value": 2
+}
+position = Vector2(300, 4900)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_td1fl"]
+script = ExtResource("5")
+id = "d0edb6ad-3bea-4c24-b544-03067926783f"
+type = "5edff22e-62eb-407f-912b-880916a887fc"
+properties = {
+"index": 0,
+"mode": 0,
+"values": Array[int]([1, -1])
+}
+position = Vector2(4100, 2500)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_3n07k"]
+script = ExtResource("5")
+id = "d30b8182-e7f8-4662-b618-735d9cbe071b"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(3640, 2680)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_k1ahg"]
+script = ExtResource("5")
+id = "d8eeb8c7-f373-422c-8832-d7a81ca261d3"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 2
+}
+position = Vector2(3640, 3220)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_wk01t"]
+script = ExtResource("5")
+id = "dc3f441a-6357-4382-b577-a5adf29a15ca"
+type = "53f3a6c9-2666-4c7f-8094-327c49e6771f"
+properties = {
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(2500, 3600)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_i1rgg"]
+script = ExtResource("5")
+id = "e242f103-8caa-4b39-be3d-f5bb36fd72a9"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Assume he's falling. This will be reset by the collision detection code. It has to be done this way round because there's no \"not collidiing\" node"
+}
+position = Vector2(2380, 3300)
+node_size = Vector2(571.587, 256.55)
+
+[sub_resource type="Resource" id="Resource_3sgnm"]
+script = ExtResource("5")
+id = "e35a4955-e25b-4a6a-850e-e1043a7a2fe7"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 1
+}
+position = Vector2(840, 3320)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_jct62"]
+script = ExtResource("5")
+id = "e7581e08-917c-4dcd-af23-9a561369f0d8"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 2
+}
+position = Vector2(6820, 1940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_d0jcm"]
+script = ExtResource("5")
+id = "e761278a-e037-4273-b59d-83881fa393a8"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "He's mid-jump..."
+}
+position = Vector2(2360, 2800)
+node_size = Vector2(324.547, 131.577)
+
+[sub_resource type="Resource" id="Resource_suocd"]
+script = ExtResource("5")
+id = "eb142375-4a49-4539-9c94-4e5a59a96beb"
+type = "53f3a6c9-2666-4c7f-8094-327c49e6771f"
+properties = {
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(5420, 1940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_5ib2q"]
+script = ExtResource("5")
+id = "f1c0383a-a599-497a-abc2-57feeee87c77"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 1,
+"operator": 0
+}
+position = Vector2(5060, 2360)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_1nyhr"]
+script = ExtResource("5")
+id = "feb959af-891e-4f5d-a475-e8801999dbf7"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 40
+}
+position = Vector2(6320, 1940)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_mp027"]
+script = ExtResource("5")
+id = "fb32fd89-8a55-44a7-9abf-f402994eff89"
+type = "28301854-ca71-4623-b044-f1c88149ae70"
+properties = {
+"x": 0,
+"y": 0
+}
+position = Vector2(1260, -180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_6bjvm"]
+script = ExtResource("5")
+id = "6247e73f-a854-4e0b-8ad0-9bff68a25233"
+type = "dbdcce8d-d479-45dd-93d0-fcb65460bfa7"
+properties = {}
+position = Vector2(-360, -180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hisrv"]
+script = ExtResource("5")
+id = "aa5b4f23-b707-44e1-afff-01ea992a17aa"
+type = "95acc913-482e-417e-9e73-21bcd651f330"
+properties = {
+"x_in": 0,
+"y_in": 0
+}
+position = Vector2(800, -180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_klusn"]
+script = ExtResource("5")
+id = "58f134ec-6302-4a23-b170-461d8bf5313c"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 8,
+"operator": 0
+}
+position = Vector2(400, 20)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_g8q1i"]
+script = ExtResource("5")
+id = "ce9f68b6-3fb5-48f3-8db6-0087594a3c86"
+type = "07f9fbf5-48ab-4d33-b2b8-f132105d1df0"
+properties = {
+"room": -1,
+"x_in": 0,
+"y_in": 0
+}
+position = Vector2(-40, -100)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_sykok"]
+script = ExtResource("5")
+id = "9764bb82-d3a1-49bb-8c17-be9a8c9dc1c2"
+type = "28301854-ca71-4623-b044-f1c88149ae70"
+properties = {
+"x": 0,
+"y": 0
+}
+position = Vector2(1260, 260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ynkjk"]
+script = ExtResource("5")
+id = "0da55310-3b13-465b-9405-28a02e324dff"
+type = "5900d014-78f0-4202-a95c-2e31a9816740"
+properties = {
+"const_b": 0,
+"mode": false
+}
+position = Vector2(1700, 180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_863q1"]
+script = ExtResource("5")
+id = "bffe214b-e242-45e5-a83b-3edf28915de2"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 7,
+"operator": 0
+}
+position = Vector2(400, 400)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_8sf65"]
+script = ExtResource("5")
+id = "24207445-4ee5-41eb-94df-68b8e4d4b9e3"
+type = "95acc913-482e-417e-9e73-21bcd651f330"
+properties = {
+"x_in": 0,
+"y_in": 0
+}
+position = Vector2(800, 280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_aux64"]
+script = ExtResource("5")
+id = "de8cdcc4-169b-4846-837d-cd7af1b665e7"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Work out if his foot is on a trampoline tile"
+}
+position = Vector2(-60, -280)
+node_size = Vector2(639.8711, 134.35382)
+
+[sub_resource type="Resource" id="Resource_e2bbp"]
+script = ExtResource("5")
+id = "69874f37-bb01-42c2-9b20-faed5b4ca80c"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 5,
+"const_opb": 0
+}
+position = Vector2(3600, -340)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_wmsaf"]
+script = ExtResource("5")
+id = "fea73d2a-adb1-47a6-bdc4-5b0a0a986503"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"index": 0,
+"variable": 0
+}
+position = Vector2(4060, 100)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_j2j24"]
+script = ExtResource("5")
+id = "5cf0e87b-d2f2-4f74-a68c-d1420c0eb736"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"index": 0,
+"variable": 0
+}
+position = Vector2(2660, 340)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_qtcdf"]
+script = ExtResource("5")
+id = "89325317-b560-4ea5-9c9c-9d801dd4ceed"
+type = "5edff22e-62eb-407f-912b-880916a887fc"
+properties = {
+"index": 0,
+"mode": 0,
+"values": Array[int]([1, 0])
+}
+position = Vector2(3180, 320)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_py5mk"]
+script = ExtResource("5")
+id = "49e3ea15-a202-4d51-a77d-e93c96323649"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "No trampoline, so switch direction"
+}
+position = Vector2(4060, 400)
+node_size = Vector2(522, 138)
+
+[sub_resource type="Resource" id="Resource_qi7yu"]
+script = ExtResource("5")
+id = "2e7fca22-58b5-4735-bcde-06fb5a0bd12a"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"index": 0,
+"variable": 1
+}
+position = Vector2(340, -1380)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_224p7"]
+script = ExtResource("5")
+id = "cebf4167-1759-48c1-b93c-5631efb2cf8b"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"index": 0,
+"variable": 3
+}
+position = Vector2(800, -1380)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_n8m8r"]
+script = ExtResource("5")
+id = "312087c1-5a48-46f3-bf99-072dc320677f"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"index": 0,
+"variable": 0
+}
+position = Vector2(-100, -1380)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_qvy5o"]
+script = ExtResource("5")
+id = "6e24a3d7-a2bb-47e2-98bb-1f22797ab085"
+type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
+properties = {}
+position = Vector2(-440, -1380)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_0h33a"]
+script = ExtResource("5")
+id = "37d93347-8a1c-41bc-883d-905d8e174eb4"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Message means he's hit a portal. Stop jumping."
+}
+position = Vector2(-420, 6220)
+node_size = Vector2(524.0281, 182.80188)
+
+[sub_resource type="Resource" id="Resource_c8g33"]
+script = ExtResource("7")
+name = "facing_animation"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_e5vug"]
+script = ExtResource("7")
+name = "is_jumping"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_a5lk6"]
+script = ExtResource("7")
+name = "jump_frame"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_di7ek"]
+script = ExtResource("7")
+name = "is_falling"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_6427f"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([SubResource("Resource_c8g33"), SubResource("Resource_e5vug"), SubResource("Resource_a5lk6"), SubResource("Resource_di7ek")])
+nodes = {
+"01f2e5f5-2c19-4a58-9fc7-c11adae79fb7": SubResource("Resource_t32rt"),
+"072800ae-2d4c-4a25-9c6d-7bc27eb626a7": SubResource("Resource_wkce1"),
+"09048e20-e08d-4b52-84b8-e6e8894a7c30": SubResource("Resource_r6iqd"),
+"0bd69874-b27f-40d3-b4d6-a74ecf5e3423": SubResource("Resource_xgg0r"),
+"0da55310-3b13-465b-9405-28a02e324dff": SubResource("Resource_ynkjk"),
+"0dc9653d-1f0b-4416-8e2f-ae89ad56e23c": SubResource("Resource_vrltt"),
+"124de37d-5caa-4233-a2a5-d448d2a515cf": SubResource("Resource_o6c4i"),
+"15c40131-e6dc-4ed5-b9a0-ecfcdbe5440d": SubResource("Resource_7uv8h"),
+"24207445-4ee5-41eb-94df-68b8e4d4b9e3": SubResource("Resource_8sf65"),
+"24ab56aa-cbdc-4e7d-b490-a59b625b75d4": SubResource("Resource_4kaaw"),
+"26688975-6aca-457e-b40e-625bdb1accf9": SubResource("Resource_gxt5o"),
+"2de0ac78-2ae7-43d5-9eb6-ccef1b13c640": SubResource("Resource_mrvc6"),
+"2e468139-72bb-4e83-8c47-e38ca70a051b": SubResource("Resource_pnj36"),
+"2e7fca22-58b5-4735-bcde-06fb5a0bd12a": SubResource("Resource_qi7yu"),
+"3100fd35-de3f-4371-b07f-d5a6b8dfb5a2": SubResource("Resource_bj3qw"),
+"312087c1-5a48-46f3-bf99-072dc320677f": SubResource("Resource_n8m8r"),
+"3448b8fd-84d0-406e-b42d-447101015e25": SubResource("Resource_ivemc"),
+"37d93347-8a1c-41bc-883d-905d8e174eb4": SubResource("Resource_0h33a"),
+"39b25552-ef6f-4247-8cb8-d501e5bbd2a9": SubResource("Resource_onxhn"),
+"3c0637e8-a90e-48fb-9b9a-216dde81b23c": SubResource("Resource_ftoss"),
+"3c1d17cc-f6c3-4dd4-901a-b7ff311a09fa": SubResource("Resource_eqn41"),
+"3d751477-676f-4c76-90bc-ac63dc512d56": SubResource("Resource_pbygc"),
+"4203c6f1-0f94-4388-98eb-22ebd25d894c": SubResource("Resource_d04xx"),
+"4640bf4e-8625-43d9-811c-a3351caa5527": SubResource("Resource_5ebn1"),
+"46f5c00f-75d5-43da-b1a5-04d4fa3da0a4": SubResource("Resource_ranmj"),
+"480a002f-a307-4f4e-ac71-b85a192ae550": SubResource("Resource_2qfw4"),
+"49e3ea15-a202-4d51-a77d-e93c96323649": SubResource("Resource_py5mk"),
+"51ea716f-aea7-4150-b65b-22703fb3bc03": SubResource("Resource_q4nml"),
+"52bd13e4-7f60-42c9-8081-3bc740c04d76": SubResource("Resource_84apf"),
+"5536eb89-b14a-4b7c-9d76-70aa039343cf": SubResource("Resource_xt3yj"),
+"5727a31f-b90a-4376-82b2-b365f3890f60": SubResource("Resource_7jn3s"),
+"58f134ec-6302-4a23-b170-461d8bf5313c": SubResource("Resource_klusn"),
+"5a48b851-0dca-47f6-9575-864ef1b62dfb": SubResource("Resource_xwnvc"),
+"5bb278fb-999a-47cb-9f32-a8750ebd495d": SubResource("Resource_yejsd"),
+"5cf0e87b-d2f2-4f74-a68c-d1420c0eb736": SubResource("Resource_j2j24"),
+"5d592717-7959-4c5a-91f5-a29f6475a27b": SubResource("Resource_uaipv"),
+"60e42b29-3a7a-4664-9a95-858aa74be060": SubResource("Resource_vwlk3"),
+"6127fa8f-3508-48f9-bb7a-31220ae7a7ae": SubResource("Resource_40ovs"),
+"6247e73f-a854-4e0b-8ad0-9bff68a25233": SubResource("Resource_6bjvm"),
+"63005632-e8f5-41e6-969f-6ead9d3e0627": SubResource("Resource_umcl7"),
+"69874f37-bb01-42c2-9b20-faed5b4ca80c": SubResource("Resource_e2bbp"),
+"6e24a3d7-a2bb-47e2-98bb-1f22797ab085": SubResource("Resource_qvy5o"),
+"72429823-0e50-442c-b6ff-66a6c8838c72": SubResource("Resource_fq2ia"),
+"76b3a92b-0030-4f07-9a0d-5254cdc46b72": SubResource("Resource_iyf5y"),
+"787cb623-d896-461f-a16c-4a039724210e": SubResource("Resource_i4l46"),
+"7a65cf5a-165c-4cf3-aafa-5ff25ce9f197": SubResource("Resource_3mgxe"),
+"7ba07652-d3c1-4f6d-b365-3141ad8ca8e5": SubResource("Resource_44lt4"),
+"7bf2241b-60be-4237-aafa-286f7b222336": SubResource("Resource_h8a02"),
+"8032230a-98de-43d0-ad71-0f83cc1ac42a": SubResource("Resource_shrvr"),
+"8912c96a-d3c4-4b18-a312-daecab17848b": SubResource("Resource_nk6jy"),
+"89325317-b560-4ea5-9c9c-9d801dd4ceed": SubResource("Resource_qtcdf"),
+"8c961218-0943-4cb8-a716-d32483a4469b": SubResource("Resource_cpi63"),
+"8ec788c6-877c-4d04-a4f8-6fdc02d7cdf6": SubResource("Resource_3gooi"),
+"8f5e9e3d-63e3-4c39-a54d-d9c8c95cdf60": SubResource("Resource_eki74"),
+"8fc1859d-0122-44b0-ae22-e8373bb23246": SubResource("Resource_fnjs0"),
+"90b6a9da-557c-4047-b421-dc7d23b6304e": SubResource("Resource_5npwn"),
+"939e7dcc-4e3c-4b95-978b-cfaafdb2cd01": SubResource("Resource_rnyql"),
+"9764bb82-d3a1-49bb-8c17-be9a8c9dc1c2": SubResource("Resource_sykok"),
+"986e3b03-815a-4718-aed5-476b44fc6717": SubResource("Resource_pqasr"),
+"99e6204b-141b-4722-89b9-52895de92975": SubResource("Resource_aox6h"),
+"9b21c6f4-05e9-4d00-8458-bafb58044c31": SubResource("Resource_w4h2g"),
+"9cf806b9-174b-44d2-aee3-b45eba7454ae": SubResource("Resource_dh8sa"),
+"a002389e-2e1d-4b39-a4d5-249a6d0faa7a": SubResource("Resource_xrncm"),
+"a4a59057-903a-4826-aa2b-c177fbf2b032": SubResource("Resource_dth4g"),
+"aa5b4f23-b707-44e1-afff-01ea992a17aa": SubResource("Resource_hisrv"),
+"ad3b176c-fabf-45e1-81b0-1ed6488a0de3": SubResource("Resource_hkl0y"),
+"b660207d-e63f-40bb-aa2b-c33d3d08c9c0": SubResource("Resource_6m82r"),
+"b688c4bf-829d-41c3-b4b1-e2bb39d6ba81": SubResource("Resource_mve8t"),
+"b8dfd823-69d6-4c8a-8e0d-730623f474c2": SubResource("Resource_xeme8"),
+"bd9b4c18-4f06-4d8e-80c4-5245eace1695": SubResource("Resource_n6f7n"),
+"be362e89-be99-47ed-9088-bac8359e5905": SubResource("Resource_qi42o"),
+"bffdcb35-81af-4e50-91ec-0c036882f261": SubResource("Resource_4n7ek"),
+"bffe214b-e242-45e5-a83b-3edf28915de2": SubResource("Resource_863q1"),
+"c2b9c92d-e9ad-44d2-be59-f9f4310b2c23": SubResource("Resource_fqi31"),
+"c5f3f14a-deb8-43b8-b72b-68f04762d276": SubResource("Resource_ygrhs"),
+"cc2e841c-b662-4606-a46e-908fe06c7fd1": SubResource("Resource_rjomb"),
+"cda1d1d6-aa92-4ef5-b91e-402bd05ce2bf": SubResource("Resource_32yk4"),
+"ce9f68b6-3fb5-48f3-8db6-0087594a3c86": SubResource("Resource_g8q1i"),
+"cebf4167-1759-48c1-b93c-5631efb2cf8b": SubResource("Resource_224p7"),
+"cf186c18-8deb-4663-9cb7-2880e9d9386f": SubResource("Resource_vhs1p"),
+"d0edb6ad-3bea-4c24-b544-03067926783f": SubResource("Resource_td1fl"),
+"d30b8182-e7f8-4662-b618-735d9cbe071b": SubResource("Resource_3n07k"),
+"d8eeb8c7-f373-422c-8832-d7a81ca261d3": SubResource("Resource_k1ahg"),
+"dc3f441a-6357-4382-b577-a5adf29a15ca": SubResource("Resource_wk01t"),
+"de8cdcc4-169b-4846-837d-cd7af1b665e7": SubResource("Resource_aux64"),
+"e242f103-8caa-4b39-be3d-f5bb36fd72a9": SubResource("Resource_i1rgg"),
+"e35a4955-e25b-4a6a-850e-e1043a7a2fe7": SubResource("Resource_3sgnm"),
+"e7581e08-917c-4dcd-af23-9a561369f0d8": SubResource("Resource_jct62"),
+"e761278a-e037-4273-b59d-83881fa393a8": SubResource("Resource_d0jcm"),
+"eb142375-4a49-4539-9c94-4e5a59a96beb": SubResource("Resource_suocd"),
+"f1c0383a-a599-497a-abc2-57feeee87c77": SubResource("Resource_5ib2q"),
+"fb32fd89-8a55-44a7-9abf-f402994eff89": SubResource("Resource_mp027"),
+"fea73d2a-adb1-47a6-bdc4-5b0a0a986503": SubResource("Resource_wmsaf"),
+"feb959af-891e-4f5d-a475-e8801999dbf7": SubResource("Resource_1nyhr")
+}
+connections = Array[ExtResource("3")]([SubResource("Resource_oj1g8"), SubResource("Resource_gu8td"), SubResource("Resource_wfk2p"), SubResource("Resource_7vo5e"), SubResource("Resource_7h2ok"), SubResource("Resource_aa57j"), SubResource("Resource_rmgap"), SubResource("Resource_yu3st"), SubResource("Resource_dti3s"), SubResource("Resource_4tltq"), SubResource("Resource_4m7un"), SubResource("Resource_2bgpo"), SubResource("Resource_cp53q"), SubResource("Resource_jtdlc"), SubResource("Resource_vodo6"), SubResource("Resource_euhdf"), SubResource("Resource_gtpom"), SubResource("Resource_8mv07"), SubResource("Resource_04flc"), SubResource("Resource_djcpx"), SubResource("Resource_qrd64"), SubResource("Resource_bbc4r"), SubResource("Resource_chqt1"), SubResource("Resource_ja5iv"), SubResource("Resource_ycs6y"), SubResource("Resource_pn02n"), SubResource("Resource_ve8ll"), SubResource("Resource_t5nvc"), SubResource("Resource_0xcga"), SubResource("Resource_h4d53"), SubResource("Resource_5e5ee"), SubResource("Resource_v1ysk"), SubResource("Resource_gwaq5"), SubResource("Resource_43qoe"), SubResource("Resource_b1a3w"), SubResource("Resource_l0jos"), SubResource("Resource_h4lqk"), SubResource("Resource_ytl6w"), SubResource("Resource_lhpau"), SubResource("Resource_3bkvm"), SubResource("Resource_vriha"), SubResource("Resource_okal7"), SubResource("Resource_4em4m"), SubResource("Resource_7hddo"), SubResource("Resource_vkfg3"), SubResource("Resource_kxf6u"), SubResource("Resource_r8bd6"), SubResource("Resource_vxuws"), SubResource("Resource_whm8m"), SubResource("Resource_b6fwr"), SubResource("Resource_ndjd8"), SubResource("Resource_4tcdr"), SubResource("Resource_hxwnh"), SubResource("Resource_b7xc5"), SubResource("Resource_cy1j8"), SubResource("Resource_o45d3"), SubResource("Resource_csl1b"), SubResource("Resource_au77y"), SubResource("Resource_76xr6"), SubResource("Resource_u3t8s"), SubResource("Resource_64fum"), SubResource("Resource_cplxa"), SubResource("Resource_8v7sj"), SubResource("Resource_7rrkj"), SubResource("Resource_dq0fa"), SubResource("Resource_01uu3"), SubResource("Resource_g4qbn"), SubResource("Resource_324qc"), SubResource("Resource_1nh8x"), SubResource("Resource_cavhl"), SubResource("Resource_3yrul"), SubResource("Resource_wdhgy"), SubResource("Resource_ittc8"), SubResource("Resource_jcwr5"), SubResource("Resource_viop7"), SubResource("Resource_lrodh"), SubResource("Resource_gnn2l"), SubResource("Resource_b0rrt")])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_mr6s7"]
+script = ExtResource("9")
+sheet_name = "Wonky (imported)"
+num_sprites = 16
+num_layers = 2
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]), Array[int]([1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1])], [Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]), Array[int]([1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0]), Array[int]([1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0]), Array[int]([1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1])], [Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]), Array[int]([1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1])], [Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]), Array[int]([1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0]), Array[int]([1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0]), Array[int]([1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0]), Array[int]([1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]), Array[int]([1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1]), Array[int]([1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1]), Array[int]([1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0]), Array[int]([1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]), Array[int]([1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0]), Array[int]([1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1]), Array[int]([1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
+
+[sub_resource type="Resource" id="Resource_i4a0t"]
+script = ExtResource("8")
+object_name = "Wonky"
+animation_frames = Array[int]([])
+animations = [[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]]
+sprite_sheet = SubResource("Resource_mr6s7")
+object_logic = SubResource("Resource_6427f")
+draw_mode = 3
+num_dynamic = 0
+single_colour = -1
+properties = {
+"bright": 1,
+"ink_colour": 7,
+"paper_colour": 0
+}
+
+[sub_resource type="Resource" id="Resource_8vtxr"]
+script = ExtResource("2")
+object = SubResource("Resource_i4a0t")
+object_ref_name = "Wonky"
+initial_pos = Vector2i(528, 120)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": true,
+"player": true,
+"visible": true
+}
+on_layers = 1
+intersect_layers = 1
+instance_variables = {}
+var_array = [0, 0, 0, 0]
+def_var_array = [0, 0, 0, 0]
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+initial_animation = 0
+animation = 0
+current_frame = 0
+is_global = true
+animation_rate = 0
+properties = {
+"plane": 0
+}
+
+[sub_resource type="Resource" id="Resource_yvxhh"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {
+Vector2i(14, 14): 18,
+Vector2i(15, 14): 16,
+Vector2i(16, 14): 16,
+Vector2i(17, 14): 16,
+Vector2i(18, 14): 16,
+Vector2i(19, 14): 16,
+Vector2i(20, 14): 16,
+Vector2i(21, 14): 16,
+Vector2i(22, 14): 16,
+Vector2i(23, 14): 16,
+Vector2i(24, 14): 16,
+Vector2i(25, 14): 16,
+Vector2i(26, 14): 16,
+Vector2i(27, 14): 16
+}
+attrs = {
+Vector2i(0, 13): {
+"bright": true,
+"ink": 5,
+"paper": 0
+},
+Vector2i(0, 14): {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 15): {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 16): {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 17): {
+"bright": true,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 18): {
+"collision": 1
+},
+Vector2i(1, 13): {
+"bright": false,
+"ink": 7,
+"paper": 0
+},
+Vector2i(1, 14): {
+"bright": false,
+"ink": 5,
+"paper": 0
+},
+Vector2i(1, 15): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 16): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 17): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 18): {
+"collision": 1
+},
+Vector2i(2, 18): {
+"collision": 1
+},
+Vector2i(3, 18): {
+"collision": 1
+},
+Vector2i(8, 18): {
+"collision": 1
+},
+Vector2i(9, 18): {
+"collision": 1
+},
+Vector2i(10, 18): {
+"collision": 1
+},
+Vector2i(11, 18): {
+"collision": 1
+},
+Vector2i(12, 18): {
+"collision": 1
+},
+Vector2i(13, 18): {
+"collision": 1
+},
+Vector2i(14, 14): {
+"bright": false,
+"collision": 5,
+"ink": 4,
+"paper": 0
+},
+Vector2i(14, 18): {
+"collision": 1
+},
+Vector2i(15, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(15, 18): {
+"collision": 1
+},
+Vector2i(16, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(16, 18): {
+"collision": 1
+},
+Vector2i(17, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(17, 18): {
+"collision": 1
+},
+Vector2i(18, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(18, 18): {
+"collision": 1
+},
+Vector2i(19, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(19, 18): {
+"collision": 1
+},
+Vector2i(20, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(20, 18): {
+"collision": 1
+},
+Vector2i(21, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(21, 18): {
+"collision": 1
+},
+Vector2i(22, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(22, 18): {
+"collision": 1
+},
+Vector2i(23, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(23, 18): {
+"collision": 1
+},
+Vector2i(24, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(24, 18): {
+"collision": 1
+},
+Vector2i(25, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(25, 18): {
+"collision": 1
+},
+Vector2i(26, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(26, 18): {
+"collision": 1
+},
+Vector2i(27, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(27, 18): {
+"collision": 1
+}
+}
+brushes = {
+Vector2i(0, 13): 1,
+Vector2i(0, 18): 0,
+Vector2i(8, 18): 0,
+Vector2i(12, 18): 0,
+Vector2i(16, 18): 0,
+Vector2i(20, 18): 0,
+Vector2i(24, 18): 0
+}
+
+[sub_resource type="Resource" id="Resource_utwoc"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_jlab2"]
+script = ExtResource("13")
+room_name = "left room"
+map = SubResource("Resource_yvxhh")
+object_refs = Array[ExtResource("2")]([])
+markers = Array[ExtResource("12")]([])
+room_logic = SubResource("Resource_utwoc")
+
+[sub_resource type="Resource" id="Resource_m1fhm"]
+script = ExtResource("10")
+room = SubResource("Resource_jlab2")
+room_ref_name = "left"
+pos = Vector2i(0, 0)
+props = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+ink_colour = -1
+paper_colour = -1
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_vxy2h"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {
+Vector2i(0, 14): 16,
+Vector2i(1, 14): 16,
+Vector2i(2, 14): 16,
+Vector2i(3, 14): 16,
+Vector2i(4, 14): 16,
+Vector2i(5, 14): 16,
+Vector2i(6, 14): 16,
+Vector2i(7, 14): 16,
+Vector2i(8, 14): 16,
+Vector2i(9, 14): 16,
+Vector2i(10, 14): 16,
+Vector2i(11, 14): 16,
+Vector2i(12, 14): 16,
+Vector2i(13, 14): 16,
+Vector2i(14, 14): 16,
+Vector2i(15, 14): 16,
+Vector2i(16, 14): 16,
+Vector2i(17, 14): 16,
+Vector2i(18, 14): 16,
+Vector2i(19, 14): 16,
+Vector2i(20, 14): 16,
+Vector2i(21, 14): 16,
+Vector2i(22, 14): 16,
+Vector2i(23, 14): 16,
+Vector2i(24, 14): 16,
+Vector2i(25, 14): 16,
+Vector2i(26, 14): 16,
+Vector2i(27, 14): 16
+}
+attrs = {
+Vector2i(0, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 18): {
+"collision": 1
+},
+Vector2i(1, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 18): {
+"collision": 1
+},
+Vector2i(2, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(2, 18): {
+"collision": 1
+},
+Vector2i(3, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(3, 18): {
+"collision": 1
+},
+Vector2i(4, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(4, 18): {
+"collision": 1
+},
+Vector2i(5, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(5, 18): {
+"collision": 1
+},
+Vector2i(6, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(6, 18): {
+"collision": 1
+},
+Vector2i(7, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(7, 18): {
+"collision": 1
+},
+Vector2i(8, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(8, 18): {
+"collision": 1
+},
+Vector2i(9, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(9, 18): {
+"collision": 1
+},
+Vector2i(10, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(10, 18): {
+"collision": 1
+},
+Vector2i(11, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(11, 18): {
+"collision": 1
+},
+Vector2i(12, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(12, 18): {
+"collision": 1
+},
+Vector2i(13, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(13, 18): {
+"collision": 1
+},
+Vector2i(14, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(14, 18): {
+"collision": 1
+},
+Vector2i(15, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(15, 18): {
+"collision": 1
+},
+Vector2i(16, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(16, 18): {
+"collision": 1
+},
+Vector2i(17, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(17, 18): {
+"collision": 1
+},
+Vector2i(18, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(18, 18): {
+"collision": 1
+},
+Vector2i(19, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(19, 18): {
+"collision": 1
+},
+Vector2i(20, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(20, 18): {
+"collision": 1
+},
+Vector2i(21, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(21, 18): {
+"collision": 1
+},
+Vector2i(22, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(22, 18): {
+"collision": 1
+},
+Vector2i(23, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(23, 18): {
+"collision": 1
+},
+Vector2i(24, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(24, 18): {
+"collision": 1
+},
+Vector2i(25, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(25, 18): {
+"collision": 1
+},
+Vector2i(26, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(26, 18): {
+"collision": 1
+},
+Vector2i(27, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(27, 18): {
+"collision": 1
+}
+}
+brushes = {
+Vector2i(0, 18): 0,
+Vector2i(4, 18): 0,
+Vector2i(8, 18): 0,
+Vector2i(12, 18): 0,
+Vector2i(14, 3): 2,
+Vector2i(16, 18): 0,
+Vector2i(20, 18): 0,
+Vector2i(24, 18): 0
+}
+
+[sub_resource type="Resource" id="Resource_0jvcx"]
+script = ExtResource("12")
+pos = Vector2i(116, 13)
+
+[sub_resource type="Resource" id="Resource_j0f8o"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_u80dm"]
+script = ExtResource("13")
+room_name = "centre room"
+map = SubResource("Resource_vxy2h")
+object_refs = Array[ExtResource("2")]([])
+markers = Array[ExtResource("12")]([SubResource("Resource_0jvcx")])
+room_logic = SubResource("Resource_j0f8o")
+
+[sub_resource type="Resource" id="Resource_1oxu3"]
+script = ExtResource("10")
+room = SubResource("Resource_u80dm")
+room_ref_name = "centre"
+pos = Vector2i(224, 0)
+props = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+ink_colour = -1
+paper_colour = -1
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_s4lej"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {
+Vector2i(0, 14): 16,
+Vector2i(1, 14): 16,
+Vector2i(2, 14): 16,
+Vector2i(3, 14): 16,
+Vector2i(4, 14): 30,
+Vector2i(5, 14): 17,
+Vector2i(6, 12): 15,
+Vector2i(7, 12): 16,
+Vector2i(8, 12): 17,
+Vector2i(8, 18): 30,
+Vector2i(10, 16): 30,
+Vector2i(14, 18): 30
+}
+attrs = {
+Vector2i(0, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(0, 18): {
+"collision": 1
+},
+Vector2i(1, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 18): {
+"collision": 1
+},
+Vector2i(2, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(2, 18): {
+"collision": 1
+},
+Vector2i(3, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(3, 18): {
+"collision": 1
+},
+Vector2i(4, 14): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(4, 18): {
+"collision": 1
+},
+Vector2i(5, 14): {
+"bright": false,
+"collision": 9,
+"ink": 4,
+"paper": 0
+},
+Vector2i(5, 18): {
+"collision": 1
+},
+Vector2i(6, 12): {
+"bright": false,
+"collision": 5,
+"ink": 4,
+"paper": 0
+},
+Vector2i(6, 18): {
+"collision": 1
+},
+Vector2i(7, 12): {
+"bright": false,
+"collision": 1,
+"ink": 4,
+"paper": 0
+},
+Vector2i(7, 18): {
+"collision": 1
+},
+Vector2i(8, 12): {
+"bright": false,
+"collision": 9,
+"ink": 4,
+"paper": 0
+},
+Vector2i(8, 18): {
+"collision": 1
+},
+Vector2i(9, 18): {
+"collision": 1
+},
+Vector2i(10, 18): {
+"collision": 1
+},
+Vector2i(11, 18): {
+"collision": 1
+},
+Vector2i(12, 18): {
+"collision": 1
+},
+Vector2i(13, 18): {
+"collision": 1
+},
+Vector2i(14, 18): {
+"collision": 1
+},
+Vector2i(15, 18): {
+"collision": 1
+},
+Vector2i(16, 18): {
+"collision": 1
+},
+Vector2i(17, 18): {
+"collision": 1
+},
+Vector2i(18, 18): {
+"collision": 1
+},
+Vector2i(19, 18): {
+"collision": 1
+},
+Vector2i(24, 18): {
+"collision": 1
+},
+Vector2i(25, 18): {
+"collision": 1
+},
+Vector2i(26, 13): {
+"collision": 5
+},
+Vector2i(26, 14): {
+"collision": 4
+},
+Vector2i(26, 15): {
+"collision": 4
+},
+Vector2i(26, 16): {
+"collision": 4
+},
+Vector2i(26, 17): {
+"collision": 4
+},
+Vector2i(26, 18): {
+"collision": 1
+},
+Vector2i(27, 9): {
+"collision": 8
+},
+Vector2i(27, 10): {
+"collision": 8
+},
+Vector2i(27, 11): {
+"collision": 8
+},
+Vector2i(27, 12): {
+"collision": 8
+},
+Vector2i(27, 13): {
+"collision": 1
+},
+Vector2i(27, 14): {
+"collision": 0
+},
+Vector2i(27, 15): {
+"collision": 0
+},
+Vector2i(27, 16): {
+"collision": 0
+},
+Vector2i(27, 17): {
+"collision": 0
+},
+Vector2i(27, 18): {
+"collision": 1
+}
+}
+brushes = {
+Vector2i(0, 18): 0,
+Vector2i(4, 18): 0,
+Vector2i(6, 12): 2,
+Vector2i(8, 18): 0,
+Vector2i(10, 10): 2,
+Vector2i(10, 16): 2,
+Vector2i(12, 18): 0,
+Vector2i(14, 8): 2,
+Vector2i(16, 18): 0,
+Vector2i(18, 6): 2,
+Vector2i(22, 4): 2,
+Vector2i(24, 18): 0,
+Vector2i(26, 13): 1
+}
+
+[sub_resource type="Resource" id="Resource_wu1kl"]
+script = ExtResource("3")
+from_node = "80731bcf-1232-4eb3-a081-ec498a832162"
+to_node = "df7d71ce-7798-4b03-9019-914aec2e1377"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_034hh"]
+script = ExtResource("3")
+from_node = "6497aea6-4bd2-4879-bbac-14f175734d63"
+to_node = "b8884922-9410-4c12-923d-9df8eb365bc5"
+from_port = 0
+from_port_name = "val"
+to_port = 2
+to_port_name = "ink"
+type = 1
+
+[sub_resource type="Resource" id="Resource_3d7vs"]
+script = ExtResource("3")
+from_node = "6497aea6-4bd2-4879-bbac-14f175734d63"
+to_node = "966b74bb-ae7e-4402-9ea3-e7c870773f8f"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vrm8h"]
+script = ExtResource("3")
+from_node = "966b74bb-ae7e-4402-9ea3-e7c870773f8f"
+to_node = "b3ca9890-6e68-4206-a6bb-d423e080acd1"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_i8rmj"]
+script = ExtResource("3")
+from_node = "13848bd1-7842-48ff-b458-8141d2684b96"
+to_node = "b8884922-9410-4c12-923d-9df8eb365bc5"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_51i62"]
+script = ExtResource("3")
+from_node = "b8884922-9410-4c12-923d-9df8eb365bc5"
+to_node = "966b74bb-ae7e-4402-9ea3-e7c870773f8f"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_l1awb"]
+script = ExtResource("3")
+from_node = "35febc5c-0c47-4f42-9b8c-9f95fdadad46"
+to_node = "746e7102-0ba9-44c2-82b3-6cfc77874514"
+from_port = 0
+from_port_name = "val"
+to_port = 0
+to_port_name = "location"
+type = 1
+
+[sub_resource type="Resource" id="Resource_d1154"]
+script = ExtResource("3")
+from_node = "746e7102-0ba9-44c2-82b3-6cfc77874514"
+to_node = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+from_port = 0
+from_port_name = "ref"
+to_port = 2
+to_port_name = "room"
+type = 3
+
+[sub_resource type="Resource" id="Resource_gaafn"]
+script = ExtResource("3")
+from_node = "6420bbbd-c6ac-474b-900f-edf944d82f33"
+to_node = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_1k6so"]
+script = ExtResource("3")
+from_node = "781dce8f-68f1-4d7d-9d80-122cb576345b"
+to_node = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+from_port = 0
+from_port_name = "val"
+to_port = 3
+to_port_name = "marker"
+type = 1
+
+[sub_resource type="Resource" id="Resource_6b73k"]
+script = ExtResource("3")
+from_node = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+to_node = "54ea31c5-9363-407a-b3bb-a3089ffd7f6d"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_pp50m"]
+script = ExtResource("3")
+from_node = "6420bbbd-c6ac-474b-900f-edf944d82f33"
+to_node = "54ea31c5-9363-407a-b3bb-a3089ffd7f6d"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_jquuo"]
+script = ExtResource("3")
+from_node = "6420bbbd-c6ac-474b-900f-edf944d82f33"
+to_node = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_7amjw"]
+script = ExtResource("3")
+from_node = "a1e50466-c8f3-4c7d-9fa8-3065f347efae"
+to_node = "13848bd1-7842-48ff-b458-8141d2684b96"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_enosb"]
+script = ExtResource("5")
+id = "13848bd1-7842-48ff-b458-8141d2684b96"
+type = "de542fd9-0aa0-4c8e-ac6e-79d6c7e2433b"
+properties = {
+"const": 1,
+"variable": 0
+}
+position = Vector2(100, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_lf6m4"]
+script = ExtResource("5")
+id = "247127fb-b304-4f16-b534-03a6aea94248"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Something has hit this portal. It must be Wonky, he's the only thing that moves.  Move him to the portal's destination room and marker"
+}
+position = Vector2(-460, 2140)
+node_size = Vector2(508.97485, 285.78992)
+
+[sub_resource type="Resource" id="Resource_ayipx"]
+script = ExtResource("5")
+id = "35febc5c-0c47-4f42-9b8c-9f95fdadad46"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 1
+}
+position = Vector2(-220, 2800)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_gtt41"]
+script = ExtResource("5")
+id = "386cbaf4-dc4e-44e1-8c2d-b162e728bada"
+type = "f783a9f5-ae51-45c0-bf4d-5be3eedbb386"
+properties = {
+"marker_index": 0,
+"type": false
+}
+position = Vector2(780, 2340)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_v3ijp"]
+script = ExtResource("5")
+id = "54ea31c5-9363-407a-b3bb-a3089ffd7f6d"
+type = "217a6dc4-b10a-479e-b34e-1cbf5363c562"
+properties = {
+"id": 0,
+"p1": 1,
+"p2": 0
+}
+position = Vector2(1380, 2360)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_qnohr"]
+script = ExtResource("5")
+id = "6420bbbd-c6ac-474b-900f-edf944d82f33"
+type = "63f3d2ce-3740-4eaf-a87a-1a06762b6af8"
+properties = {}
+position = Vector2(-220, 2520)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_2ceeg"]
+script = ExtResource("5")
+id = "6497aea6-4bd2-4879-bbac-14f175734d63"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(40, 1740)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_kx64q"]
+script = ExtResource("5")
+id = "729945d1-2f72-4983-85d4-90cbe1d42fa3"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Cycle portal colour"
+}
+position = Vector2(-420, 1600)
+node_size = Vector2(326.9818, 142.95172)
+
+[sub_resource type="Resource" id="Resource_vwbht"]
+script = ExtResource("5")
+id = "746e7102-0ba9-44c2-82b3-6cfc77874514"
+type = "7fff28de-4ac3-4a6e-b420-c4dca07fd92b"
+properties = {
+"location": -1
+}
+position = Vector2(200, 2680)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_dmwvl"]
+script = ExtResource("5")
+id = "781dce8f-68f1-4d7d-9d80-122cb576345b"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 2
+}
+position = Vector2(20, 3020)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_rc888"]
+script = ExtResource("5")
+id = "80731bcf-1232-4eb3-a081-ec498a832162"
+type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
+properties = {}
+position = Vector2(-433.45, 820.672)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xabk0"]
+script = ExtResource("5")
+id = "966b74bb-ae7e-4402-9ea3-e7c870773f8f"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 7
+}
+position = Vector2(1000, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_1v4ib"]
+script = ExtResource("5")
+id = "a1e50466-c8f3-4c7d-9fa8-3065f347efae"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 0,
+"skip": 4
+}
+position = Vector2(-420, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fmrif"]
+script = ExtResource("5")
+id = "b3ca9890-6e68-4206-a6bb-d423e080acd1"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 0
+}
+position = Vector2(1480, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_l3heb"]
+script = ExtResource("5")
+id = "b8884922-9410-4c12-923d-9df8eb365bc5"
+type = "09bbfcb0-07ed-4334-9448-d2cabd97ed8f"
+properties = {
+"bright": 0,
+"ignore_bright": true,
+"ignore_ink": false,
+"ignore_paper": true,
+"ink": 0,
+"paper": 0
+}
+position = Vector2(540, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xteey"]
+script = ExtResource("5")
+id = "df7d71ce-7798-4b03-9019-914aec2e1377"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 0
+}
+position = Vector2(-60, 800)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ftpys"]
+script = ExtResource("7")
+name = "colour"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_1em6t"]
+script = ExtResource("7")
+name = "destination room"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_foeep"]
+script = ExtResource("7")
+name = "destination marker"
+type = 2
+index = 0
+length = 0
+
+[sub_resource type="Resource" id="Resource_0nhpd"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([SubResource("Resource_ftpys"), SubResource("Resource_1em6t"), SubResource("Resource_foeep")])
+nodes = {
+"13848bd1-7842-48ff-b458-8141d2684b96": SubResource("Resource_enosb"),
+"247127fb-b304-4f16-b534-03a6aea94248": SubResource("Resource_lf6m4"),
+"35febc5c-0c47-4f42-9b8c-9f95fdadad46": SubResource("Resource_ayipx"),
+"386cbaf4-dc4e-44e1-8c2d-b162e728bada": SubResource("Resource_gtt41"),
+"54ea31c5-9363-407a-b3bb-a3089ffd7f6d": SubResource("Resource_v3ijp"),
+"6420bbbd-c6ac-474b-900f-edf944d82f33": SubResource("Resource_qnohr"),
+"6497aea6-4bd2-4879-bbac-14f175734d63": SubResource("Resource_2ceeg"),
+"729945d1-2f72-4983-85d4-90cbe1d42fa3": SubResource("Resource_kx64q"),
+"746e7102-0ba9-44c2-82b3-6cfc77874514": SubResource("Resource_vwbht"),
+"781dce8f-68f1-4d7d-9d80-122cb576345b": SubResource("Resource_dmwvl"),
+"80731bcf-1232-4eb3-a081-ec498a832162": SubResource("Resource_rc888"),
+"966b74bb-ae7e-4402-9ea3-e7c870773f8f": SubResource("Resource_xabk0"),
+"a1e50466-c8f3-4c7d-9fa8-3065f347efae": SubResource("Resource_1v4ib"),
+"b3ca9890-6e68-4206-a6bb-d423e080acd1": SubResource("Resource_fmrif"),
+"b8884922-9410-4c12-923d-9df8eb365bc5": SubResource("Resource_l3heb"),
+"df7d71ce-7798-4b03-9019-914aec2e1377": SubResource("Resource_xteey")
+}
+connections = Array[ExtResource("3")]([SubResource("Resource_wu1kl"), SubResource("Resource_034hh"), SubResource("Resource_3d7vs"), SubResource("Resource_vrm8h"), SubResource("Resource_i8rmj"), SubResource("Resource_51i62"), SubResource("Resource_l1awb"), SubResource("Resource_d1154"), SubResource("Resource_gaafn"), SubResource("Resource_1k6so"), SubResource("Resource_6b73k"), SubResource("Resource_pp50m"), SubResource("Resource_jquuo"), SubResource("Resource_7amjw")])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_wnpwt"]
+script = ExtResource("9")
+sheet_name = "Main"
+num_sprites = 1
+num_layers = 2
+sprite_width = 16
+sprite_height = 16
+num_pixels_per_sprite = 256
+sprite_data = [[Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}])
+
+[sub_resource type="Resource" id="Resource_0373k"]
+script = ExtResource("8")
+object_name = "Portal"
+animation_frames = Array[int]([])
+animations = [[0]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_0nhpd")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {
+"bright": 1,
+"ink_colour": 1
+}
+
+[sub_resource type="Resource" id="Resource_sy47k"]
+script = ExtResource("2")
+object = SubResource("Resource_0373k")
+object_ref_name = "Portal"
+initial_pos = Vector2i(208, 0)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": false,
+"player": false,
+"visible": true
+}
+on_layers = 1
+intersect_layers = 1
+instance_variables = {}
+var_array = [0, 0, 0]
+def_var_array = [0, 1, 0]
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+initial_animation = 0
+animation = 0
+current_frame = 0
+is_global = false
+animation_rate = 10
+properties = {
+"bright": 0,
+"plane": 0
+}
+
+[sub_resource type="Resource" id="Resource_nhsmu"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_icuyk"]
+script = ExtResource("13")
+room_name = "right room"
+map = SubResource("Resource_s4lej")
+object_refs = Array[ExtResource("2")]([SubResource("Resource_sy47k")])
+markers = Array[ExtResource("12")]([])
+room_logic = SubResource("Resource_nhsmu")
+
+[sub_resource type="Resource" id="Resource_e4elu"]
+script = ExtResource("10")
+room = SubResource("Resource_icuyk")
+room_ref_name = "right"
+pos = Vector2i(448, 0)
+props = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+ink_colour = -1
+paper_colour = -1
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_r3ltg"]
+script = ExtResource("14")
+rooms = Array[ExtResource("10")]([SubResource("Resource_m1fhm"), SubResource("Resource_1oxu3"), SubResource("Resource_e4elu")])
+object_refs = Array[ExtResource("2")]([SubResource("Resource_8vtxr")])
+start_location = 2
+
+[sub_resource type="Resource" id="Resource_hvkwg"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_3rjlj"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {
+Vector2i(0, 22): 29,
+Vector2i(1, 22): 29,
+Vector2i(2, 22): 29,
+Vector2i(3, 22): 29,
+Vector2i(4, 22): 29,
+Vector2i(5, 22): 29,
+Vector2i(6, 22): 29,
+Vector2i(7, 22): 29,
+Vector2i(8, 22): 29,
+Vector2i(9, 22): 29,
+Vector2i(10, 22): 29,
+Vector2i(11, 22): 29,
+Vector2i(12, 22): 29,
+Vector2i(13, 22): 29,
+Vector2i(14, 22): 29,
+Vector2i(15, 22): 29,
+Vector2i(16, 22): 29,
+Vector2i(17, 22): 29,
+Vector2i(18, 22): 29,
+Vector2i(19, 22): 29,
+Vector2i(20, 22): 29,
+Vector2i(21, 22): 29,
+Vector2i(22, 22): 29,
+Vector2i(23, 22): 29,
+Vector2i(24, 22): 29,
+Vector2i(25, 22): 29,
+Vector2i(26, 22): 29,
+Vector2i(27, 22): 29,
+Vector2i(28, 0): 28,
+Vector2i(28, 1): 28,
+Vector2i(28, 2): 28,
+Vector2i(28, 3): 28,
+Vector2i(28, 4): 28,
+Vector2i(28, 5): 28,
+Vector2i(28, 6): 28,
+Vector2i(28, 7): 28,
+Vector2i(28, 8): 28,
+Vector2i(28, 9): 28,
+Vector2i(28, 10): 28,
+Vector2i(28, 11): 28,
+Vector2i(28, 12): 28,
+Vector2i(28, 13): 28,
+Vector2i(28, 14): 28,
+Vector2i(28, 15): 28,
+Vector2i(28, 16): 28,
+Vector2i(28, 17): 28,
+Vector2i(28, 18): 28,
+Vector2i(28, 19): 28,
+Vector2i(28, 20): 28,
+Vector2i(28, 21): 28
+}
+attrs = {
+Vector2i(0, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(1, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(2, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(3, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(4, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(5, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(6, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(7, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(8, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(9, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(10, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(11, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(12, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(13, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(14, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(15, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(16, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(17, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(18, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(19, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(20, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(21, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(22, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(23, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(24, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(25, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(26, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(27, 22): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 0): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 1): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 2): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 3): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 4): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 5): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 6): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 7): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 8): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 9): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 10): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 11): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 12): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 13): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 14): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 15): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 16): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 17): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 18): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 19): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 20): {
+"bright": false,
+"ink": 4,
+"paper": 0
+},
+Vector2i(28, 21): {
+"bright": false,
+"ink": 4,
+"paper": 0
+}
+}
+brushes = {}
+metadata/_custom_type_script = "uid://bstlhmjgmke7a"
+
+[sub_resource type="Resource" id="Resource_oe7tb"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+metadata/_custom_type_script = "uid://cx1khln4eb0rb"
+
+[sub_resource type="Resource" id="Resource_f4ul4"]
+script = ExtResource("15")
+screen_name = "Default"
+is_game_screen = true
+window_position = Vector2i(0, 0)
+instruments = Array[ExtResource("16")]([])
+screen_logic = SubResource("Resource_oe7tb")
+background_colour = -1
+ink_colour = -1
+properties = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+var_array = []
+def_var_array = []
+map = SubResource("Resource_3rjlj")
+
+[sub_resource type="Resource" id="Resource_2eind"]
+script = ExtResource("18")
+type = 1
+frames = 20
+frame_length = 50
+pitch = 2000
+pitch_slide = -50
+duty = 128
+duty_slide = 0
+noise_pitch = 100
+noise_pitch_slide = 0
+
+[sub_resource type="Resource" id="Resource_h5due"]
+script = ExtResource("19")
+fx_name = "Fire"
+blocks = Array[ExtResource("18")]([SubResource("Resource_2eind")])
+
+[sub_resource type="Resource" id="Resource_qm1oa"]
+script = ExtResource("9")
+sheet_name = ""
+num_sprites = 31
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0])], [Array[int]([0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0])], [Array[int]([0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1])], [Array[int]([1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0])], [Array[int]([1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1])], [Array[int]([1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0])], [Array[int]([1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])], [Array[int]([0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1])], [Array[int]([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1])], [Array[int]([1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0])], [Array[int]([0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
+"collision": 1,
+"frame_count": 0.0,
+"ink_colour": 2,
+"rate": 0.0,
+"type": 1.0
+}])
+
+[resource]
+script = ExtResource("17")
+major_version = 0
+minor_version = 1
+build_version = 0
+window = Rect2i(0, 0, 224, 176)
+format_version_string = "0.1"
+sprite_sheets = Array[ExtResource("9")]([SubResource("Resource_wnpwt"), SubResource("Resource_mr6s7")])
+tile_sheet = SubResource("Resource_qm1oa")
+objects = Array[ExtResource("8")]([SubResource("Resource_i4a0t"), SubResource("Resource_0373k")])
+graph_resource = SubResource("Resource_hvkwg")
+global_variables = []
+rooms = Array[ExtResource("13")]([SubResource("Resource_jlab2"), SubResource("Resource_u80dm"), SubResource("Resource_icuyk")])
+game_map = SubResource("Resource_r3ltg")
+screens = Array[ExtResource("15")]([SubResource("Resource_f4ul4")])
+initial_screen = 0
+text_data = []
+brushes = Array[ExtResource("1")]([SubResource("Resource_1j3u7"), SubResource("Resource_25kdh"), SubResource("Resource_6gp38")])
+sounds = {
+"beep_fx": [SubResource("Resource_h5due")]
+}
+images = {}
+breakpoints = {}
+properties = {}
+max_dynamic_objects = 10
+subgraphs = Array[ExtResource("20")]([])
+controller_keycodes = Array[int]([512, 256, 1281, 1280, 1792])
+max_animated_tiles = 20
+throttle = 50
+max_tracked_intersections = 10
