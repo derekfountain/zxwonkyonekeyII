@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=452 format=3]
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=453 format=3]
 
 [ext_resource type="Script" path="res://brush.gd" id="1"]
 [ext_resource type="Script" path="res://object_ref.gd" id="2"]
@@ -20,6 +20,22 @@
 [ext_resource type="Script" path="res://beep_fx_block.gd" id="18"]
 [ext_resource type="Script" path="res://beep_fx.gd" id="19"]
 [ext_resource type="Script" path="res://sub_graph.gd" id="20"]
+
+[sub_resource type="Resource" id="Resource_l3emw"]
+script = ExtResource("1")
+contents = [[{
+"attr": null,
+"tile": 9
+}, {
+"attr": null,
+"tile": 7
+}], [{
+"attr": null,
+"tile": 8
+}, {
+"attr": null,
+"tile": 9
+}]]
 
 [sub_resource type="Resource" id="Resource_oj1g8"]
 script = ExtResource("3")
@@ -2242,7 +2258,20 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(8, 18): 0,
+Vector2i(9, 16): 0,
+Vector2i(11, 15): 0,
+Vector2i(12, 13): 0,
+Vector2i(13, 11): 0,
+Vector2i(15, 10): 0,
+Vector2i(16, 8): 0,
+Vector2i(18, 7): 0,
+Vector2i(20, 6): 0,
+Vector2i(22, 5): 0,
+Vector2i(24, 4): 0,
+Vector2i(26, 4): 0
+}
 
 [sub_resource type="Resource" id="Resource_lpu86"]
 script = ExtResource("6")
@@ -2278,7 +2307,22 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 4): 0,
+Vector2i(2, 4): 0,
+Vector2i(4, 4): 0,
+Vector2i(6, 3): 0,
+Vector2i(8, 3): 0,
+Vector2i(10, 3): 0,
+Vector2i(12, 3): 0,
+Vector2i(14, 3): 0,
+Vector2i(16, 2): 0,
+Vector2i(18, 2): 0,
+Vector2i(20, 2): 0,
+Vector2i(22, 2): 0,
+Vector2i(24, 2): 0,
+Vector2i(26, 2): 0
+}
 
 [sub_resource type="Resource" id="Resource_1q05o"]
 script = ExtResource("6")
@@ -2314,7 +2358,22 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 2): 0,
+Vector2i(2, 2): 0,
+Vector2i(4, 2): 0,
+Vector2i(6, 1): 0,
+Vector2i(8, 1): 0,
+Vector2i(10, 1): 0,
+Vector2i(12, 1): 0,
+Vector2i(14, 2): 0,
+Vector2i(16, 2): 0,
+Vector2i(18, 3): 0,
+Vector2i(20, 3): 0,
+Vector2i(22, 3): 0,
+Vector2i(24, 4): 0,
+Vector2i(26, 5): 0
+}
 
 [sub_resource type="Resource" id="Resource_h38xp"]
 script = ExtResource("6")
@@ -2350,7 +2409,17 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 6): 0,
+Vector2i(2, 7): 0,
+Vector2i(4, 8): 0,
+Vector2i(6, 10): 0,
+Vector2i(8, 11): 0,
+Vector2i(10, 13): 0,
+Vector2i(12, 15): 0,
+Vector2i(14, 17): 0,
+Vector2i(16, 18): 0
+}
 
 [sub_resource type="Resource" id="Resource_uhijy"]
 script = ExtResource("6")
@@ -2386,7 +2455,27 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(1, 18): 0,
+Vector2i(2, 14): 0,
+Vector2i(2, 16): 0,
+Vector2i(3, 12): 0,
+Vector2i(4, 10): 0,
+Vector2i(6, 10): 0,
+Vector2i(7, 12): 0,
+Vector2i(8, 14): 0,
+Vector2i(9, 16): 0,
+Vector2i(10, 18): 0,
+Vector2i(12, 18): 0,
+Vector2i(14, 18): 0,
+Vector2i(15, 14): 0,
+Vector2i(15, 16): 0,
+Vector2i(16, 12): 0,
+Vector2i(18, 11): 0,
+Vector2i(20, 13): 0,
+Vector2i(21, 15): 0,
+Vector2i(22, 17): 0
+}
 
 [sub_resource type="Resource" id="Resource_4cj40"]
 script = ExtResource("6")
@@ -2494,7 +2583,10 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(26, 18): 0,
+Vector2i(27, 16): 0
+}
 
 [sub_resource type="Resource" id="Resource_2gecy"]
 script = ExtResource("6")
@@ -2530,7 +2622,18 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 17): 0,
+Vector2i(1, 13): 0,
+Vector2i(1, 15): 0,
+Vector2i(2, 11): 0,
+Vector2i(3, 7): 0,
+Vector2i(3, 9): 0,
+Vector2i(4, 5): 0,
+Vector2i(5, 3): 0,
+Vector2i(6, 1): 0,
+Vector2i(7, 0): 0
+}
 
 [sub_resource type="Resource" id="Resource_qdamd"]
 script = ExtResource("6")
@@ -2638,7 +2741,13 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(18, 0): 0,
+Vector2i(20, 1): 0,
+Vector2i(22, 1): 0,
+Vector2i(24, 1): 0,
+Vector2i(26, 0): 0
+}
 
 [sub_resource type="Resource" id="Resource_p3372"]
 script = ExtResource("6")
@@ -2674,7 +2783,9 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 0): 0
+}
 
 [sub_resource type="Resource" id="Resource_pehbj"]
 script = ExtResource("6")
@@ -2780,9 +2891,22 @@ def_var_array = []
 [sub_resource type="Resource" id="Resource_ga1nf"]
 script = ExtResource("11")
 map_name = "unnamed"
-cells = {}
+cells = {
+Vector2i(24, 7): 9,
+Vector2i(24, 8): 8,
+Vector2i(25, 7): 7,
+Vector2i(25, 8): 9
+}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(24, 5): 0,
+Vector2i(24, 9): 0,
+Vector2i(24, 11): 0,
+Vector2i(24, 13): 0,
+Vector2i(25, 0): 0,
+Vector2i(25, 1): 0,
+Vector2i(25, 3): 0
+}
 
 [sub_resource type="Resource" id="Resource_25mmg"]
 script = ExtResource("6")
@@ -3286,7 +3410,14 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(9, 18): 0,
+Vector2i(11, 18): 0,
+Vector2i(13, 18): 0,
+Vector2i(25, 10): 0,
+Vector2i(25, 12): 0,
+Vector2i(25, 14): 0
+}
 
 [sub_resource type="Resource" id="Resource_ucxm4"]
 script = ExtResource("6")
@@ -3466,7 +3597,12 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(10, 18): 0,
+Vector2i(12, 18): 0,
+Vector2i(14, 18): 0,
+Vector2i(16, 18): 0
+}
 
 [sub_resource type="Resource" id="Resource_b4uh0"]
 script = ExtResource("6")
@@ -3538,7 +3674,11 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(22, 6): 0,
+Vector2i(24, 6): 0,
+Vector2i(26, 6): 0
+}
 
 [sub_resource type="Resource" id="Resource_smpsq"]
 script = ExtResource("6")
@@ -3718,7 +3858,14 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(6, 18): 0,
+Vector2i(8, 18): 0,
+Vector2i(10, 18): 0,
+Vector2i(12, 18): 0,
+Vector2i(14, 18): 0,
+Vector2i(16, 18): 0
+}
 
 [sub_resource type="Resource" id="Resource_sw2hy"]
 script = ExtResource("6")
@@ -3826,7 +3973,12 @@ script = ExtResource("11")
 map_name = "unnamed"
 cells = {}
 attrs = {}
-brushes = {}
+brushes = {
+Vector2i(0, 8): 0,
+Vector2i(2, 8): 0,
+Vector2i(4, 8): 0,
+Vector2i(6, 8): 0
+}
 
 [sub_resource type="Resource" id="Resource_h1h63"]
 script = ExtResource("6")
@@ -4636,12 +4788,12 @@ blocks = Array[ExtResource("18")]([SubResource("Resource_2eind")])
 [sub_resource type="Resource" id="Resource_qm1oa"]
 script = ExtResource("9")
 sheet_name = ""
-num_sprites = 6
+num_sprites = 10
 num_layers = 1
 sprite_width = 8
 sprite_height = 8
 num_pixels_per_sprite = 64
-sprite_data = [[Array[int]([1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_data = [[Array[int]([1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])]]
 sprite_properties = Array[Dictionary]([{
 "bright": 1,
 "collision": 1,
@@ -4671,7 +4823,7 @@ sprite_properties = Array[Dictionary]([{
 "paper_colour": 4,
 "rate": 0.0,
 "type": 1.0
-}])
+}, {}, {}, {}, {}])
 
 [resource]
 script = ExtResource("17")
@@ -4690,7 +4842,7 @@ game_map = SubResource("Resource_r3ltg")
 screens = Array[ExtResource("15")]([SubResource("Resource_f4ul4")])
 initial_screen = 0
 text_data = []
-brushes = Array[ExtResource("1")]([])
+brushes = Array[ExtResource("1")]([SubResource("Resource_l3emw")])
 sounds = {
 "beep_fx": [SubResource("Resource_h5due")]
 }
