@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=514 format=3]
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=546 format=3]
 
 [ext_resource type="Script" path="res://brush.gd" id="1"]
 [ext_resource type="Script" path="res://object_ref.gd" id="2"]
@@ -1614,6 +1614,18 @@ properties = {
 position = Vector2(1380, 3000)
 node_size = Vector2(0, 0)
 
+[sub_resource type="Resource" id="Resource_suw48"]
+script = ExtResource("5")
+id = "86cb8302-e9ab-432c-b426-e990aa7533f0"
+type = "f700474f-e7ba-4957-9501-67d7b5bc2be8"
+properties = {
+"id": 2,
+"p1": 0,
+"p2": 0
+}
+position = Vector2(1360, 7260)
+node_size = Vector2(0, 0)
+
 [sub_resource type="Resource" id="Resource_nk6jy"]
 script = ExtResource("5")
 id = "8912c96a-d3c4-4b18-a312-daecab17848b"
@@ -1794,6 +1806,16 @@ properties = {
 }
 position = Vector2(5200, 1480)
 node_size = Vector2(736.602, 302.514)
+
+[sub_resource type="Resource" id="Resource_w50td"]
+script = ExtResource("5")
+id = "b1e7c4b2-8697-4d20-b26c-b43b0531e17f"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Send a message to the location telling it its switch has been thrown. Assumes one switch per room for the time being"
+}
+position = Vector2(1240, 7000)
+node_size = Vector2(492.39673, 240)
 
 [sub_resource type="Resource" id="Resource_hvedu"]
 script = ExtResource("5")
@@ -2153,28 +2175,6 @@ properties = {
 position = Vector2(6320, 1940)
 node_size = Vector2(0, 0)
 
-[sub_resource type="Resource" id="Resource_suw48"]
-script = ExtResource("5")
-id = "86cb8302-e9ab-432c-b426-e990aa7533f0"
-type = "f700474f-e7ba-4957-9501-67d7b5bc2be8"
-properties = {
-"id": 2,
-"p1": 0,
-"p2": 0
-}
-position = Vector2(1360, 7260)
-node_size = Vector2(0, 0)
-
-[sub_resource type="Resource" id="Resource_w50td"]
-script = ExtResource("5")
-id = "b1e7c4b2-8697-4d20-b26c-b43b0531e17f"
-type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
-properties = {
-"text": "Send a message to the location telling it its switch has been thrown. Assumes one switch per room for the time being"
-}
-position = Vector2(1240, 7000)
-node_size = Vector2(492.39673, 240)
-
 [sub_resource type="Resource" id="Resource_c8g33"]
 script = ExtResource("7")
 name = "facing_animation"
@@ -2358,7 +2358,7 @@ properties = {
 script = ExtResource("2")
 object = SubResource("Resource_i4a0t")
 object_ref_name = "Wonky"
-initial_pos = Vector2i(47, 935)
+initial_pos = Vector2i(78, 335)
 flags = {
 "active": true,
 "collide": false,
@@ -3266,13 +3266,48 @@ paper_colour = -1
 var_array = []
 def_var_array = []
 
+[sub_resource type="Resource" id="Resource_3ndhx"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(8, 19)
+
 [sub_resource type="Resource" id="Resource_658pi"]
 script = ExtResource("12")
 map_name = "unnamed"
-cells = {}
-attrs = {}
+cells = {
+Vector2i(3, 15): 1,
+Vector2i(3, 16): 1,
+Vector2i(3, 17): 1,
+Vector2i(3, 18): 1,
+Vector2i(3, 19): 1,
+Vector2i(8, 18): 1,
+Vector2i(12, 18): 1
+}
+attrs = {
+Vector2i(3, 15): {
+"collision": 8
+},
+Vector2i(3, 16): {
+"collision": 8
+},
+Vector2i(3, 17): {
+"collision": 8
+},
+Vector2i(3, 18): {
+"collision": 8
+},
+Vector2i(3, 19): {
+"collision": 8
+},
+Vector2i(8, 18): {
+"collision": 9
+},
+Vector2i(12, 18): {
+"collision": 5
+}
+}
 brushes = {}
-brushes_list = Array[ExtResource("11")]([])
+brushes_list = Array[ExtResource("11")]([SubResource("Resource_3ndhx")])
 
 [sub_resource type="Resource" id="Resource_2gecy"]
 script = ExtResource("6")
@@ -3586,13 +3621,159 @@ paper_colour = -1
 var_array = []
 def_var_array = []
 
+[sub_resource type="Resource" id="Resource_tu0y1"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(0, 19)
+
+[sub_resource type="Resource" id="Resource_yqmyg"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(3, 17)
+
+[sub_resource type="Resource" id="Resource_nrqub"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(9, 17)
+
+[sub_resource type="Resource" id="Resource_maewi"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(15, 17)
+
+[sub_resource type="Resource" id="Resource_0jh4u"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(19, 17)
+
+[sub_resource type="Resource" id="Resource_ywy18"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(19, 19)
+
+[sub_resource type="Resource" id="Resource_0tvnn"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(4, 13)
+
+[sub_resource type="Resource" id="Resource_h1u0j"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(10, 11)
+
+[sub_resource type="Resource" id="Resource_gkd78"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(22, 7)
+
+[sub_resource type="Resource" id="Resource_7fx1h"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(16, 5)
+
+[sub_resource type="Resource" id="Resource_po1kp"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(10, 3)
+
+[sub_resource type="Resource" id="Resource_0r6ov"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(4, 1)
+
+[sub_resource type="Resource" id="Resource_kkre7"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(16, 9)
+
 [sub_resource type="Resource" id="Resource_ga1nf"]
 script = ExtResource("12")
 map_name = "unnamed"
-cells = {}
-attrs = {}
+cells = {
+Vector2i(0, 8): 1,
+Vector2i(0, 9): 1,
+Vector2i(0, 10): 1,
+Vector2i(0, 11): 1,
+Vector2i(0, 12): 1,
+Vector2i(0, 13): 1,
+Vector2i(0, 14): 1,
+Vector2i(0, 15): 1,
+Vector2i(0, 16): 1,
+Vector2i(0, 17): 1,
+Vector2i(0, 18): 1,
+Vector2i(0, 19): 1,
+Vector2i(1, 15): 5,
+Vector2i(2, 19): 5,
+Vector2i(3, 0): 1,
+Vector2i(3, 1): 0,
+Vector2i(4, 1): 5,
+Vector2i(6, 13): 5,
+Vector2i(6, 17): 5,
+Vector2i(10, 3): 5,
+Vector2i(12, 11): 5,
+Vector2i(12, 17): 5,
+Vector2i(16, 5): 5,
+Vector2i(16, 17): 5,
+Vector2i(18, 9): 5,
+Vector2i(19, 18): 1,
+Vector2i(20, 17): 5,
+Vector2i(22, 7): 5,
+Vector2i(23, 19): 1,
+Vector2i(24, 19): 5,
+Vector2i(25, 19): 1,
+Vector2i(26, 19): 1,
+Vector2i(27, 18): 1,
+Vector2i(27, 19): 2
+}
+attrs = {
+Vector2i(0, 8): {
+"collision": 9
+},
+Vector2i(0, 9): {
+"collision": 8
+},
+Vector2i(0, 10): {
+"collision": 8
+},
+Vector2i(0, 11): {
+"collision": 8
+},
+Vector2i(0, 12): {
+"collision": 8
+},
+Vector2i(0, 13): {
+"collision": 8
+},
+Vector2i(0, 14): {
+"collision": 8
+},
+Vector2i(0, 15): {
+"collision": 8
+},
+Vector2i(0, 16): {
+"collision": 8
+},
+Vector2i(0, 17): {
+"collision": 8
+},
+Vector2i(0, 18): {
+"collision": 8
+},
+Vector2i(3, 0): {
+"collision": 9
+},
+Vector2i(19, 17): {
+"collision": 8
+},
+Vector2i(19, 18): {
+"collision": 8
+},
+Vector2i(27, 18): {
+"collision": 4
+}
+}
 brushes = {}
-brushes_list = Array[ExtResource("11")]([])
+brushes_list = Array[ExtResource("11")]([SubResource("Resource_tu0y1"), SubResource("Resource_yqmyg"), SubResource("Resource_nrqub"), SubResource("Resource_maewi"), SubResource("Resource_0jh4u"), SubResource("Resource_ywy18"), SubResource("Resource_0tvnn"), SubResource("Resource_h1u0j"), SubResource("Resource_gkd78"), SubResource("Resource_7fx1h"), SubResource("Resource_po1kp"), SubResource("Resource_0r6ov"), SubResource("Resource_kkre7")])
 
 [sub_resource type="Resource" id="Resource_25mmg"]
 script = ExtResource("6")
@@ -3906,13 +4087,206 @@ paper_colour = -1
 var_array = []
 def_var_array = []
 
+[sub_resource type="Resource" id="Resource_3n2wc"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(9, 17)
+
+[sub_resource type="Resource" id="Resource_04e0g"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(3, 13)
+
+[sub_resource type="Resource" id="Resource_d2mw2"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(10, 12)
+
+[sub_resource type="Resource" id="Resource_f0twh"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(19, 12)
+
+[sub_resource type="Resource" id="Resource_oy074"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(23, 10)
+
+[sub_resource type="Resource" id="Resource_cg6du"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(19, 8)
+
+[sub_resource type="Resource" id="Resource_aquxf"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(13, 6)
+
+[sub_resource type="Resource" id="Resource_tyf4h"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(4, 6)
+
+[sub_resource type="Resource" id="Resource_ieadr"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(0, 19)
+
+[sub_resource type="Resource" id="Resource_0bqpg"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(4, 19)
+
+[sub_resource type="Resource" id="Resource_qebav"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(8, 19)
+
+[sub_resource type="Resource" id="Resource_iiotn"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(22, 19)
+
+[sub_resource type="Resource" id="Resource_i4yfo"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(12, 19)
+
+[sub_resource type="Resource" id="Resource_82yoq"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(6, 15)
+
+[sub_resource type="Resource" id="Resource_124ah"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(0, 4)
+
+[sub_resource type="Resource" id="Resource_1brqi"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(6, 2)
+
+[sub_resource type="Resource" id="Resource_jlgpg"]
+script = ExtResource("11")
+brush_index = 1
+position = Vector2i(11, 1)
+
 [sub_resource type="Resource" id="Resource_htukw"]
 script = ExtResource("12")
 map_name = "unnamed"
-cells = {}
-attrs = {}
+cells = {
+Vector2i(0, 0): 1,
+Vector2i(0, 1): 1,
+Vector2i(0, 2): 1,
+Vector2i(0, 3): 1,
+Vector2i(0, 4): 1,
+Vector2i(0, 5): 1,
+Vector2i(0, 6): 1,
+Vector2i(0, 7): 1,
+Vector2i(0, 8): 1,
+Vector2i(0, 9): 1,
+Vector2i(0, 10): 1,
+Vector2i(0, 11): 1,
+Vector2i(0, 12): 1,
+Vector2i(0, 13): 1,
+Vector2i(0, 14): 1,
+Vector2i(0, 15): 1,
+Vector2i(0, 16): 1,
+Vector2i(0, 17): 1,
+Vector2i(0, 18): 1,
+Vector2i(3, 4): 5,
+Vector2i(5, 15): 0,
+Vector2i(6, 6): 5,
+Vector2i(6, 13): 5,
+Vector2i(6, 15): 5,
+Vector2i(8, 2): 5,
+Vector2i(9, 16): 1,
+Vector2i(10, 17): 5,
+Vector2i(13, 6): 5,
+Vector2i(13, 19): 5,
+Vector2i(14, 1): 5,
+Vector2i(14, 12): 5,
+Vector2i(15, 12): 2,
+Vector2i(16, 0): 0,
+Vector2i(16, 19): 0,
+Vector2i(17, 0): 2,
+Vector2i(17, 19): 2,
+Vector2i(19, 1): 0,
+Vector2i(19, 19): 0,
+Vector2i(20, 1): 5,
+Vector2i(20, 19): 2,
+Vector2i(21, 1): 2,
+Vector2i(21, 8): 5,
+Vector2i(21, 12): 5,
+Vector2i(26, 10): 5,
+Vector2i(26, 19): 0,
+Vector2i(27, 19): 2
+}
+attrs = {
+Vector2i(0, 0): {
+"collision": 8
+},
+Vector2i(0, 1): {
+"collision": 8
+},
+Vector2i(0, 2): {
+"collision": 8
+},
+Vector2i(0, 3): {
+"collision": 8
+},
+Vector2i(0, 4): {
+"collision": 8
+},
+Vector2i(0, 5): {
+"collision": 8
+},
+Vector2i(0, 6): {
+"collision": 8
+},
+Vector2i(0, 7): {
+"collision": 8
+},
+Vector2i(0, 8): {
+"collision": 8
+},
+Vector2i(0, 9): {
+"collision": 8
+},
+Vector2i(0, 10): {
+"collision": 8
+},
+Vector2i(0, 11): {
+"collision": 8
+},
+Vector2i(0, 12): {
+"collision": 8
+},
+Vector2i(0, 13): {
+"collision": 8
+},
+Vector2i(0, 14): {
+"collision": 8
+},
+Vector2i(0, 15): {
+"collision": 8
+},
+Vector2i(0, 16): {
+"collision": 8
+},
+Vector2i(0, 17): {
+"collision": 8
+},
+Vector2i(0, 18): {
+"collision": 8
+},
+Vector2i(9, 16): {
+"collision": 9
+}
+}
 brushes = {}
-brushes_list = Array[ExtResource("11")]([])
+brushes_list = Array[ExtResource("11")]([SubResource("Resource_3n2wc"), SubResource("Resource_04e0g"), SubResource("Resource_d2mw2"), SubResource("Resource_f0twh"), SubResource("Resource_oy074"), SubResource("Resource_cg6du"), SubResource("Resource_aquxf"), SubResource("Resource_tyf4h"), SubResource("Resource_ieadr"), SubResource("Resource_0bqpg"), SubResource("Resource_qebav"), SubResource("Resource_iiotn"), SubResource("Resource_i4yfo"), SubResource("Resource_82yoq"), SubResource("Resource_124ah"), SubResource("Resource_1brqi"), SubResource("Resource_jlgpg")])
 
 [sub_resource type="Resource" id="Resource_lbq6m"]
 script = ExtResource("6")
@@ -4286,6 +4660,11 @@ script = ExtResource("11")
 brush_index = 1
 position = Vector2i(19, 9)
 
+[sub_resource type="Resource" id="Resource_7k4sy"]
+script = ExtResource("11")
+brush_index = 0
+position = Vector2i(15, 1)
+
 [sub_resource type="Resource" id="Resource_hftok"]
 script = ExtResource("12")
 map_name = "unnamed"
@@ -4311,6 +4690,7 @@ Vector2i(14, 17): 5,
 Vector2i(15, 4): 2,
 Vector2i(15, 9): 5,
 Vector2i(15, 17): 2,
+Vector2i(16, 1): 5,
 Vector2i(16, 19): 5,
 Vector2i(19, 4): 0,
 Vector2i(19, 8): 1,
@@ -4384,7 +4764,7 @@ Vector2i(27, 8): {
 }
 }
 brushes = {}
-brushes_list = Array[ExtResource("11")]([SubResource("Resource_u0wgh"), SubResource("Resource_2ldkr"), SubResource("Resource_8x3b0"), SubResource("Resource_b0ebc"), SubResource("Resource_uea7j"), SubResource("Resource_0vecj"), SubResource("Resource_w10b4"), SubResource("Resource_hxwnh"), SubResource("Resource_b7xc5"), SubResource("Resource_fnjs0"), SubResource("Resource_b1n3y"), SubResource("Resource_gqc00")])
+brushes_list = Array[ExtResource("11")]([SubResource("Resource_u0wgh"), SubResource("Resource_2ldkr"), SubResource("Resource_8x3b0"), SubResource("Resource_b0ebc"), SubResource("Resource_uea7j"), SubResource("Resource_0vecj"), SubResource("Resource_w10b4"), SubResource("Resource_hxwnh"), SubResource("Resource_b7xc5"), SubResource("Resource_fnjs0"), SubResource("Resource_b1n3y"), SubResource("Resource_gqc00"), SubResource("Resource_7k4sy")])
 
 [sub_resource type="Resource" id="Resource_6ahgd"]
 script = ExtResource("3")
@@ -4432,6 +4812,16 @@ properties = {
 position = Vector2(1140, 720)
 node_size = Vector2(0, 0)
 
+[sub_resource type="Resource" id="Resource_vhula"]
+script = ExtResource("5")
+id = "89469d4d-9d43-49b2-af2e-ce72d436013a"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Message ID 2: switch thrown"
+}
+position = Vector2(220, 480)
+node_size = Vector2(536, 172)
+
 [sub_resource type="Resource" id="Resource_m724m"]
 script = ExtResource("5")
 id = "9b418ef3-64d8-413d-be9b-99457eae830d"
@@ -4442,16 +4832,6 @@ properties = {
 }
 position = Vector2(220, 700)
 node_size = Vector2(0, 0)
-
-[sub_resource type="Resource" id="Resource_vhula"]
-script = ExtResource("5")
-id = "89469d4d-9d43-49b2-af2e-ce72d436013a"
-type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
-properties = {
-"text": "Message ID 2: switch thrown"
-}
-position = Vector2(220, 480)
-node_size = Vector2(536, 172)
 
 [sub_resource type="Resource" id="Resource_iuqgi"]
 script = ExtResource("6")
@@ -5851,5 +6231,5 @@ max_dynamic_objects = 1
 subgraphs = Array[ExtResource("21")]([])
 controller_keycodes = Array[int]([512, 256, 1281, 1280, 1792])
 max_animated_tiles = 20
-throttle = 50
+throttle = 25
 max_tracked_intersections = 1
