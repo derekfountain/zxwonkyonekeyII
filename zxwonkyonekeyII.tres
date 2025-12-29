@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=618 format=3]
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=647 format=3]
 
 [ext_resource type="Script" path="res://brush.gd" id="1"]
 [ext_resource type="Script" path="res://object_ref.gd" id="2"]
@@ -1090,6 +1090,36 @@ to_port = 0
 to_port_name = "a_val"
 type = 1
 
+[sub_resource type="Resource" id="Resource_r3su1"]
+script = ExtResource("3")
+from_node = "9fa9dbf3-24b2-4eb2-add1-c0a3c9f401fc"
+to_node = "1a51fb8a-fa6f-4520-bb7c-4ac014baf111"
+from_port = 1
+from_port_name = "false_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_j78y1"]
+script = ExtResource("3")
+from_node = "2fae86f8-f7b7-4890-8942-ba28db66824f"
+to_node = "1a51fb8a-fa6f-4520-bb7c-4ac014baf111"
+from_port = 1
+from_port_name = "type"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_v5lye"]
+script = ExtResource("3")
+from_node = "1a51fb8a-fa6f-4520-bb7c-4ac014baf111"
+to_node = "4d222a34-300a-457c-a3eb-a8907085305c"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
 [sub_resource type="Resource" id="Resource_t32rt"]
 script = ExtResource("5")
 id = "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7"
@@ -1410,7 +1440,7 @@ properties = {
 "x": 4,
 "y": 3
 }
-position = Vector2(800, 7260)
+position = Vector2(1100, 7260)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_d04xx"]
@@ -1490,10 +1520,11 @@ script = ExtResource("5")
 id = "4bdfe222-efdd-492b-b3e9-9ef839bb028e"
 type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
-"text": "Tile type 2 is a throwable switch"
+"text": "Tile type 2 is a throwable switch.
+Tile type 4 is a glove trigger."
 }
 position = Vector2(-200, 6820)
-node_size = Vector2(542.0001, 148)
+node_size = Vector2(537.64746, 154.52899)
 
 [sub_resource type="Resource" id="Resource_q4nml"]
 script = ExtResource("5")
@@ -1796,7 +1827,7 @@ properties = {
 "p1": 0,
 "p2": 0
 }
-position = Vector2(1620, 7260)
+position = Vector2(1920, 7260)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_nk6jy"]
@@ -2018,7 +2049,7 @@ type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
 "text": "Send a message to the location telling it its switch has been thrown. Assumes one switch per room for the time being"
 }
-position = Vector2(1240, 7000)
+position = Vector2(1540, 7000)
 node_size = Vector2(492.39673, 240)
 
 [sub_resource type="Resource" id="Resource_hvedu"]
@@ -2340,7 +2371,7 @@ type = "50451886-c9df-40c8-90be-627205cd0ba7"
 properties = {
 "fx": 1
 }
-position = Vector2(1220, 7320)
+position = Vector2(1520, 7320)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_5ib2q"]
@@ -2399,6 +2430,39 @@ properties = {
 position = Vector2(7620, 1800)
 node_size = Vector2(0, 0)
 
+[sub_resource type="Resource" id="Resource_h6ajp"]
+script = ExtResource("5")
+id = "1a51fb8a-fa6f-4520-bb7c-4ac014baf111"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 4
+}
+position = Vector2(1100, 7820)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_jbh72"]
+script = ExtResource("5")
+id = "4d222a34-300a-457c-a3eb-a8907085305c"
+type = "f700474f-e7ba-4957-9501-67d7b5bc2be8"
+properties = {
+"id": 4,
+"p1": 0,
+"p2": 0
+}
+position = Vector2(1940, 7820)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_88sk4"]
+script = ExtResource("5")
+id = "03229177-4bde-42e4-95ff-1fef55ab3439"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Send a message to the location telling it a boxing glove trigger has been tripped."
+}
+position = Vector2(2260, 7700)
+node_size = Vector2(536.3828, 288.63208)
+
 [sub_resource type="Resource" id="Resource_c8g33"]
 script = ExtResource("7")
 name = "facing_animation"
@@ -2440,6 +2504,7 @@ graph_name = "Graph"
 variables = Array[ExtResource("7")]([SubResource("Resource_c8g33"), SubResource("Resource_e5vug"), SubResource("Resource_a5lk6"), SubResource("Resource_di7ek"), SubResource("Resource_ggodf")])
 nodes = {
 "01f2e5f5-2c19-4a58-9fc7-c11adae79fb7": SubResource("Resource_t32rt"),
+"03229177-4bde-42e4-95ff-1fef55ab3439": SubResource("Resource_88sk4"),
 "058a1479-2eb9-4c3a-8083-5018ac9ea1dc": SubResource("Resource_f5bl8"),
 "072800ae-2d4c-4a25-9c6d-7bc27eb626a7": SubResource("Resource_wkce1"),
 "07702386-078b-48bd-ae71-19d764102c93": SubResource("Resource_y8lj1"),
@@ -2451,6 +2516,7 @@ nodes = {
 "0e3145fd-bbb2-4b15-afd3-72afe7f41cc0": SubResource("Resource_y2hwq"),
 "124de37d-5caa-4233-a2a5-d448d2a515cf": SubResource("Resource_o6c4i"),
 "15c40131-e6dc-4ed5-b9a0-ecfcdbe5440d": SubResource("Resource_7uv8h"),
+"1a51fb8a-fa6f-4520-bb7c-4ac014baf111": SubResource("Resource_h6ajp"),
 "24207445-4ee5-41eb-94df-68b8e4d4b9e3": SubResource("Resource_8sf65"),
 "2469965e-9592-4b5e-b254-91124a47e162": SubResource("Resource_mpynq"),
 "24ab56aa-cbdc-4e7d-b490-a59b625b75d4": SubResource("Resource_4kaaw"),
@@ -2477,6 +2543,7 @@ nodes = {
 "480a002f-a307-4f4e-ac71-b85a192ae550": SubResource("Resource_2qfw4"),
 "49e3ea15-a202-4d51-a77d-e93c96323649": SubResource("Resource_py5mk"),
 "4bdfe222-efdd-492b-b3e9-9ef839bb028e": SubResource("Resource_rojgw"),
+"4d222a34-300a-457c-a3eb-a8907085305c": SubResource("Resource_jbh72"),
 "51ea716f-aea7-4150-b65b-22703fb3bc03": SubResource("Resource_q4nml"),
 "52bd13e4-7f60-42c9-8081-3bc740c04d76": SubResource("Resource_84apf"),
 "5536eb89-b14a-4b7c-9d76-70aa039343cf": SubResource("Resource_xt3yj"),
@@ -2563,7 +2630,7 @@ nodes = {
 "fea73d2a-adb1-47a6-bdc4-5b0a0a986503": SubResource("Resource_wmsaf"),
 "feb959af-891e-4f5d-a475-e8801999dbf7": SubResource("Resource_1nyhr")
 }
-connections = Array[ExtResource("3")]([SubResource("Resource_oj1g8"), SubResource("Resource_gu8td"), SubResource("Resource_wfk2p"), SubResource("Resource_7vo5e"), SubResource("Resource_7h2ok"), SubResource("Resource_aa57j"), SubResource("Resource_yu3st"), SubResource("Resource_4m7un"), SubResource("Resource_2bgpo"), SubResource("Resource_cp53q"), SubResource("Resource_jtdlc"), SubResource("Resource_vodo6"), SubResource("Resource_euhdf"), SubResource("Resource_gtpom"), SubResource("Resource_8mv07"), SubResource("Resource_04flc"), SubResource("Resource_qrd64"), SubResource("Resource_ja5iv"), SubResource("Resource_ycs6y"), SubResource("Resource_pn02n"), SubResource("Resource_ve8ll"), SubResource("Resource_t5nvc"), SubResource("Resource_0xcga"), SubResource("Resource_h4d53"), SubResource("Resource_5e5ee"), SubResource("Resource_v1ysk"), SubResource("Resource_gwaq5"), SubResource("Resource_43qoe"), SubResource("Resource_b1a3w"), SubResource("Resource_l0jos"), SubResource("Resource_h4lqk"), SubResource("Resource_lhpau"), SubResource("Resource_3bkvm"), SubResource("Resource_r8bd6"), SubResource("Resource_b6fwr"), SubResource("Resource_ndjd8"), SubResource("Resource_cy1j8"), SubResource("Resource_o45d3"), SubResource("Resource_csl1b"), SubResource("Resource_au77y"), SubResource("Resource_76xr6"), SubResource("Resource_u3t8s"), SubResource("Resource_64fum"), SubResource("Resource_cplxa"), SubResource("Resource_8v7sj"), SubResource("Resource_7rrkj"), SubResource("Resource_dq0fa"), SubResource("Resource_01uu3"), SubResource("Resource_g4qbn"), SubResource("Resource_324qc"), SubResource("Resource_1nh8x"), SubResource("Resource_cavhl"), SubResource("Resource_3yrul"), SubResource("Resource_wdhgy"), SubResource("Resource_ittc8"), SubResource("Resource_jcwr5"), SubResource("Resource_lrodh"), SubResource("Resource_gnn2l"), SubResource("Resource_b0rrt"), SubResource("Resource_np3mn"), SubResource("Resource_5c1ur"), SubResource("Resource_p1oab"), SubResource("Resource_766gq"), SubResource("Resource_1luf1"), SubResource("Resource_bse68"), SubResource("Resource_711pn"), SubResource("Resource_wuxgs"), SubResource("Resource_dfgyt"), SubResource("Resource_0fb4q"), SubResource("Resource_7wy4b"), SubResource("Resource_sxmp5"), SubResource("Resource_xsjup"), SubResource("Resource_73vpm"), SubResource("Resource_g7iwb"), SubResource("Resource_4nrvx"), SubResource("Resource_gg4qg"), SubResource("Resource_clffh"), SubResource("Resource_7mtqj"), SubResource("Resource_ca076"), SubResource("Resource_3dc7r"), SubResource("Resource_q7y77"), SubResource("Resource_4a8o4"), SubResource("Resource_gav21"), SubResource("Resource_4tcdr"), SubResource("Resource_maq1p"), SubResource("Resource_n2k3e"), SubResource("Resource_wlsb2"), SubResource("Resource_s3uv5"), SubResource("Resource_oup00"), SubResource("Resource_viop7"), SubResource("Resource_u0t6a"), SubResource("Resource_5ccxu"), SubResource("Resource_uffvx"), SubResource("Resource_4uh6a"), SubResource("Resource_e2h8k"), SubResource("Resource_0ntwg"), SubResource("Resource_om7du"), SubResource("Resource_wrx0s"), SubResource("Resource_2elqt"), SubResource("Resource_vccws"), SubResource("Resource_buwi1"), SubResource("Resource_fpppj")])
+connections = Array[ExtResource("3")]([SubResource("Resource_oj1g8"), SubResource("Resource_gu8td"), SubResource("Resource_wfk2p"), SubResource("Resource_7vo5e"), SubResource("Resource_7h2ok"), SubResource("Resource_aa57j"), SubResource("Resource_yu3st"), SubResource("Resource_4m7un"), SubResource("Resource_2bgpo"), SubResource("Resource_cp53q"), SubResource("Resource_jtdlc"), SubResource("Resource_vodo6"), SubResource("Resource_euhdf"), SubResource("Resource_gtpom"), SubResource("Resource_8mv07"), SubResource("Resource_04flc"), SubResource("Resource_qrd64"), SubResource("Resource_ja5iv"), SubResource("Resource_ycs6y"), SubResource("Resource_pn02n"), SubResource("Resource_ve8ll"), SubResource("Resource_t5nvc"), SubResource("Resource_0xcga"), SubResource("Resource_h4d53"), SubResource("Resource_5e5ee"), SubResource("Resource_v1ysk"), SubResource("Resource_gwaq5"), SubResource("Resource_43qoe"), SubResource("Resource_b1a3w"), SubResource("Resource_l0jos"), SubResource("Resource_h4lqk"), SubResource("Resource_lhpau"), SubResource("Resource_3bkvm"), SubResource("Resource_r8bd6"), SubResource("Resource_b6fwr"), SubResource("Resource_ndjd8"), SubResource("Resource_cy1j8"), SubResource("Resource_o45d3"), SubResource("Resource_csl1b"), SubResource("Resource_au77y"), SubResource("Resource_76xr6"), SubResource("Resource_u3t8s"), SubResource("Resource_64fum"), SubResource("Resource_cplxa"), SubResource("Resource_8v7sj"), SubResource("Resource_7rrkj"), SubResource("Resource_dq0fa"), SubResource("Resource_01uu3"), SubResource("Resource_g4qbn"), SubResource("Resource_324qc"), SubResource("Resource_1nh8x"), SubResource("Resource_cavhl"), SubResource("Resource_3yrul"), SubResource("Resource_wdhgy"), SubResource("Resource_ittc8"), SubResource("Resource_jcwr5"), SubResource("Resource_lrodh"), SubResource("Resource_gnn2l"), SubResource("Resource_b0rrt"), SubResource("Resource_np3mn"), SubResource("Resource_5c1ur"), SubResource("Resource_p1oab"), SubResource("Resource_766gq"), SubResource("Resource_1luf1"), SubResource("Resource_bse68"), SubResource("Resource_711pn"), SubResource("Resource_wuxgs"), SubResource("Resource_dfgyt"), SubResource("Resource_0fb4q"), SubResource("Resource_7wy4b"), SubResource("Resource_sxmp5"), SubResource("Resource_xsjup"), SubResource("Resource_73vpm"), SubResource("Resource_g7iwb"), SubResource("Resource_4nrvx"), SubResource("Resource_gg4qg"), SubResource("Resource_clffh"), SubResource("Resource_7mtqj"), SubResource("Resource_ca076"), SubResource("Resource_3dc7r"), SubResource("Resource_q7y77"), SubResource("Resource_4a8o4"), SubResource("Resource_gav21"), SubResource("Resource_4tcdr"), SubResource("Resource_maq1p"), SubResource("Resource_n2k3e"), SubResource("Resource_wlsb2"), SubResource("Resource_s3uv5"), SubResource("Resource_oup00"), SubResource("Resource_viop7"), SubResource("Resource_u0t6a"), SubResource("Resource_5ccxu"), SubResource("Resource_uffvx"), SubResource("Resource_4uh6a"), SubResource("Resource_e2h8k"), SubResource("Resource_0ntwg"), SubResource("Resource_om7du"), SubResource("Resource_wrx0s"), SubResource("Resource_2elqt"), SubResource("Resource_vccws"), SubResource("Resource_buwi1"), SubResource("Resource_fpppj"), SubResource("Resource_r3su1"), SubResource("Resource_j78y1"), SubResource("Resource_v5lye")])
 logic_container = null
 frames = Array[ExtResource("4")]([])
 inputs = Array[String]([])
@@ -3225,13 +3292,13 @@ outputs = Array[String]([])
 [sub_resource type="Resource" id="Resource_wnpwt"]
 script = ExtResource("9")
 sheet_name = "Main"
-num_sprites = 1
+num_sprites = 3
 num_layers = 2
 sprite_width = 16
 sprite_height = 16
 num_pixels_per_sprite = 256
-sprite_data = [[Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
-sprite_properties = Array[Dictionary]([{}])
+sprite_data = [[Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}])
 
 [sub_resource type="Resource" id="Resource_0373k"]
 script = ExtResource("8")
@@ -6086,11 +6153,17 @@ script = ExtResource("12")
 map_name = "unnamed"
 cells = {
 Vector2i(0, 18): 11,
+Vector2i(4, 12): 5,
 Vector2i(4, 19): 4,
+Vector2i(5, 12): 4,
+Vector2i(6, 12): 4,
+Vector2i(7, 12): 4,
+Vector2i(9, 12): 8,
+Vector2i(9, 13): 3,
 Vector2i(9, 19): 4,
+Vector2i(10, 13): 3,
 Vector2i(10, 19): 4,
-Vector2i(11, 12): 11,
-Vector2i(11, 13): 4,
+Vector2i(11, 13): 5,
 Vector2i(12, 13): 4,
 Vector2i(13, 13): 10,
 Vector2i(13, 14): 9,
@@ -6100,21 +6173,248 @@ Vector2i(13, 17): 9,
 Vector2i(13, 18): 9,
 Vector2i(13, 19): 10,
 Vector2i(14, 13): 4,
-Vector2i(15, 12): 8,
 Vector2i(15, 13): 4,
 Vector2i(15, 19): 4,
+Vector2i(16, 12): 12,
+Vector2i(16, 13): 3,
+Vector2i(17, 12): 8,
+Vector2i(17, 13): 3,
 Vector2i(27, 18): 8
 }
-attrs = {}
+attrs = {
+Vector2i(4, 12): {
+"bright": false,
+"ink": 2,
+"paper": 0
+},
+Vector2i(9, 12): {
+"collision": 8
+},
+Vector2i(11, 13): {
+"bright": false,
+"ink": 2,
+"paper": 0
+},
+Vector2i(17, 12): {
+"collision": 4
+}
+}
 brushes = {}
 brushes_list = Array[ExtResource("11")]([SubResource("Resource_x1jnv"), SubResource("Resource_xs3wn"), SubResource("Resource_wxh3u"), SubResource("Resource_pdpbj"), SubResource("Resource_bq4gi"), SubResource("Resource_6iktt")])
+
+[sub_resource type="Resource" id="Resource_ea75t"]
+script = ExtResource("3")
+from_node = "83cd59ea-8128-47eb-8a24-1f898a6dcb5e"
+to_node = "b9287d83-d81f-42b9-9225-cc357620c8e4"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_qut8g"]
+script = ExtResource("3")
+from_node = "bb88d6b4-a615-40b3-a680-4aab195f3506"
+to_node = "89e728f2-9032-4f24-b520-d87d0fb0f7de"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_nnqm6"]
+script = ExtResource("3")
+from_node = "9c99b97c-8a52-4a1e-9736-abcce819627c"
+to_node = "89e728f2-9032-4f24-b520-d87d0fb0f7de"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_rf1w0"]
+script = ExtResource("3")
+from_node = "89e728f2-9032-4f24-b520-d87d0fb0f7de"
+to_node = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_g3fl5"]
+script = ExtResource("3")
+from_node = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+to_node = "08f28af6-e7a6-47d9-b224-d08e6d5b7973"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_pq75a"]
+script = ExtResource("3")
+from_node = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+to_node = "08f28af6-e7a6-47d9-b224-d08e6d5b7973"
+from_port = 2
+from_port_name = "spawned_ref"
+to_port = 1
+to_port_name = "val"
+type = 2
+
+[sub_resource type="Resource" id="Resource_vfyj4"]
+script = ExtResource("3")
+from_node = "1b3880ff-7cf5-4365-98cc-fbe40a69ce1d"
+to_node = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+from_port = 0
+from_port_name = "x_out"
+to_port = 1
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_66ouk"]
+script = ExtResource("3")
+from_node = "1b3880ff-7cf5-4365-98cc-fbe40a69ce1d"
+to_node = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+from_port = 1
+from_port_name = "y_out"
+to_port = 2
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_2tvkp"]
+script = ExtResource("3")
+from_node = "08f28af6-e7a6-47d9-b224-d08e6d5b7973"
+to_node = "17f77ac5-18c1-4357-b5e7-32fa5ccb200b"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_h3u62"]
+script = ExtResource("5")
+id = "9c99b97c-8a52-4a1e-9736-abcce819627c"
+type = "5ee2dc1f-6457-458a-bdcf-a510d535573c"
+properties = {
+"id": 4,
+"name": ""
+}
+position = Vector2(672, 706)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hhjjg"]
+script = ExtResource("5")
+id = "17caaf44-23d6-4d5a-b7ad-abd39254cde2"
+type = "85776ba5-334c-421c-9797-8a630a0fe359"
+properties = {
+"const_x": 206,
+"const_y": 80,
+"object_type": 3,
+"plane": 0
+}
+position = Vector2(1740, 880)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_5cc74"]
+script = ExtResource("5")
+id = "83cd59ea-8128-47eb-8a24-1f898a6dcb5e"
+type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
+properties = {}
+position = Vector2(720, 220)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_bg7hj"]
+script = ExtResource("5")
+id = "b9287d83-d81f-42b9-9225-cc357620c8e4"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": -1,
+"index": 0,
+"variable": 0
+}
+position = Vector2(1020, 220)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_q4gfm"]
+script = ExtResource("5")
+id = "89e728f2-9032-4f24-b520-d87d0fb0f7de"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": -1
+}
+position = Vector2(1140, 880)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hrold"]
+script = ExtResource("5")
+id = "bb88d6b4-a615-40b3-a680-4aab195f3506"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"index": 0,
+"variable": 0
+}
+position = Vector2(728, 1132)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_jdnkl"]
+script = ExtResource("5")
+id = "08f28af6-e7a6-47d9-b224-d08e6d5b7973"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"index": 0,
+"variable": 0
+}
+position = Vector2(2412, 884)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_n0vy6"]
+script = ExtResource("5")
+id = "1b3880ff-7cf5-4365-98cc-fbe40a69ce1d"
+type = "9e28e06f-9e4e-425b-88c3-85db7ce927ad"
+properties = {
+"room": 0,
+"x_in": 206,
+"y_in": 80
+}
+position = Vector2(1340, 1260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_s7vue"]
+script = ExtResource("5")
+id = "17f77ac5-18c1-4357-b5e7-32fa5ccb200b"
+type = "50451886-c9df-40c8-90be-627205cd0ba7"
+properties = {
+"fx": 1
+}
+position = Vector2(2860, 900)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_dl6vl"]
+script = ExtResource("7")
+name = "glove_ref"
+type = 2
+index = 0
+length = 0
 
 [sub_resource type="Resource" id="Resource_drueq"]
 script = ExtResource("6")
 graph_name = "Graph"
-variables = Array[ExtResource("7")]([])
-nodes = {}
-connections = Array[ExtResource("3")]([])
+variables = Array[ExtResource("7")]([SubResource("Resource_dl6vl")])
+nodes = {
+"08f28af6-e7a6-47d9-b224-d08e6d5b7973": SubResource("Resource_jdnkl"),
+"17caaf44-23d6-4d5a-b7ad-abd39254cde2": SubResource("Resource_hhjjg"),
+"17f77ac5-18c1-4357-b5e7-32fa5ccb200b": SubResource("Resource_s7vue"),
+"1b3880ff-7cf5-4365-98cc-fbe40a69ce1d": SubResource("Resource_n0vy6"),
+"83cd59ea-8128-47eb-8a24-1f898a6dcb5e": SubResource("Resource_5cc74"),
+"89e728f2-9032-4f24-b520-d87d0fb0f7de": SubResource("Resource_q4gfm"),
+"9c99b97c-8a52-4a1e-9736-abcce819627c": SubResource("Resource_h3u62"),
+"b9287d83-d81f-42b9-9225-cc357620c8e4": SubResource("Resource_bg7hj"),
+"bb88d6b4-a615-40b3-a680-4aab195f3506": SubResource("Resource_hrold")
+}
+connections = Array[ExtResource("3")]([SubResource("Resource_ea75t"), SubResource("Resource_qut8g"), SubResource("Resource_nnqm6"), SubResource("Resource_rf1w0"), SubResource("Resource_g3fl5"), SubResource("Resource_pq75a"), SubResource("Resource_vfyj4"), SubResource("Resource_66ouk"), SubResource("Resource_2tvkp")])
 frames = Array[ExtResource("4")]([])
 inputs = Array[String]([])
 outputs = Array[String]([])
@@ -6138,8 +6438,8 @@ props = {
 }
 ink_colour = -1
 paper_colour = -1
-var_array = []
-def_var_array = []
+var_array = [0]
+def_var_array = [0]
 
 [sub_resource type="Resource" id="Resource_mwtjk"]
 script = ExtResource("12")
@@ -6586,6 +6886,52 @@ frames = Array[ExtResource("4")]([])
 inputs = Array[String]([])
 outputs = Array[String]([])
 
+[sub_resource type="Resource" id="Resource_mvy8q"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_iog0s"]
+script = ExtResource("8")
+object_name = "GloveR"
+animation_frames = Array[int]([])
+animations = [[1]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_mvy8q")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_g0ym4"]
+script = ExtResource("6")
+graph_name = "Graph"
+variables = Array[ExtResource("7")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_ufppf"]
+script = ExtResource("8")
+object_name = "GloveL"
+animation_frames = Array[int]([])
+animations = [[2]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_g0ym4")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
 [sub_resource type="Resource" id="Resource_3rjlj"]
 script = ExtResource("12")
 map_name = "unnamed"
@@ -6923,12 +7269,12 @@ blocks = Array[ExtResource("19")]([SubResource("Resource_0i3gd"), SubResource("R
 [sub_resource type="Resource" id="Resource_qm1oa"]
 script = ExtResource("9")
 sheet_name = ""
-num_sprites = 12
+num_sprites = 13
 num_layers = 1
 sprite_width = 8
 sprite_height = 8
 num_pixels_per_sprite = 64
-sprite_data = [[Array[int]([1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0])], [Array[int]([0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1])]]
+sprite_data = [[Array[int]([1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1])], [Array[int]([1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1])], [Array[int]([0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0])], [Array[int]([0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
 sprite_properties = Array[Dictionary]([{
 "bright": 1,
 "collision": 1,
@@ -7008,6 +7354,11 @@ sprite_properties = Array[Dictionary]([{
 "ink_colour": 5,
 "rate": 0.0,
 "type": 0.0
+}, {
+"collision": 1,
+"frame_count": 0.0,
+"rate": 0.0,
+"type": 4.0
 }])
 
 [resource]
@@ -7019,7 +7370,7 @@ window = Rect2i(0, 0, 224, 160)
 format_version_string = "0.1"
 sprite_sheets = Array[ExtResource("9")]([SubResource("Resource_wnpwt"), SubResource("Resource_mr6s7")])
 tile_sheet = SubResource("Resource_qm1oa")
-objects = Array[ExtResource("8")]([SubResource("Resource_i4a0t"), SubResource("Resource_0373k")])
+objects = Array[ExtResource("8")]([SubResource("Resource_i4a0t"), SubResource("Resource_0373k"), SubResource("Resource_iog0s"), SubResource("Resource_ufppf")])
 graph_resource = SubResource("Resource_hvkwg")
 global_variables = []
 rooms = Array[ExtResource("14")]([SubResource("Resource_hyfcp"), SubResource("Resource_syl38"), SubResource("Resource_l7bfb"), SubResource("Resource_1v08l"), SubResource("Resource_1b4i2"), SubResource("Resource_u7m1i"), SubResource("Resource_78463"), SubResource("Resource_exd33"), SubResource("Resource_vsy2y"), SubResource("Resource_c2a1b"), SubResource("Resource_0laf2"), SubResource("Resource_coor0"), SubResource("Resource_3533o"), SubResource("Resource_fr7wm"), SubResource("Resource_3hupr"), SubResource("Resource_c3dng"), SubResource("Resource_f0dgv"), SubResource("Resource_rmd8q"), SubResource("Resource_7bq60"), SubResource("Resource_4aiyq"), SubResource("Resource_ofcs2"), SubResource("Resource_iotf5"), SubResource("Resource_i0yst"), SubResource("Resource_q5qpq"), SubResource("Resource_txgp1"), SubResource("Resource_oh6xf"), SubResource("Resource_j0xoo"), SubResource("Resource_yp6fd"), SubResource("Resource_fbrl8"), SubResource("Resource_jovns"), SubResource("Resource_k2upg"), SubResource("Resource_rsgks"), SubResource("Resource_xlxvc"), SubResource("Resource_frdco"), SubResource("Resource_mql6d"), SubResource("Resource_b2nwv"), SubResource("Resource_h8cdy"), SubResource("Resource_06mul"), SubResource("Resource_5lhs8"), SubResource("Resource_egl2a"), SubResource("Resource_bwfak"), SubResource("Resource_fggg5"), SubResource("Resource_udxno"), SubResource("Resource_uxho0"), SubResource("Resource_1vtl1"), SubResource("Resource_ig45m"), SubResource("Resource_34s1w"), SubResource("Resource_6hpw6"), SubResource("Resource_hfh42")])
@@ -7038,5 +7389,5 @@ max_dynamic_objects = 1
 subgraphs = Array[ExtResource("21")]([])
 controller_keycodes = Array[int]([512, 256, 1281, 1280, 1792])
 max_animated_tiles = 20
-throttle = 20
+throttle = 28
 max_tracked_intersections = 1
